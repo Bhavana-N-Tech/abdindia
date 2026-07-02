@@ -18,7 +18,7 @@ include 'includes/header.php';
 <section class="section" id="primary-partners" aria-label="Primary Partners">
   <div class="container">
     
-    <div class="section-header reveal">
+    <div class="section-header left-align reveal">
       <span class="section-label">Strategic Alliances</span>
       <h2>Primary Partner Brands<span class="red-dot">.</span></h2>
       <p>AB&amp;D is a value-added reseller for world-class developer tools and design visualization platforms, serving clients and resellers across India.</p>
@@ -72,7 +72,7 @@ include 'includes/header.php';
 <section class="section section-bg-alt" aria-label="All partners">
   <div class="container">
 
-    <div class="section-header reveal">
+    <div class="section-header left-align reveal">
       <span class="section-label">Partner Network</span>
       <h2>Global &amp; Specialized Technology Vendors<span class="red-dot">.</span></h2>
       <p>Our partner ecosystem covers every layer of modern IT — from application software and developer tools to security, cloud and infrastructure.</p>

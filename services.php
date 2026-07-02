@@ -64,7 +64,7 @@ include 'includes/header.php';
 <!-- ══════════════ SECTION 1: ENTERPRISE IT & CYBERSECURITY SERVICES ══════════════ -->
 <section class="section section-bg-alt" id="enterprise-it" aria-label="Enterprise IT & Cybersecurity">
   <div class="container">
-    <div class="section-header reveal">
+    <div class="section-header left-align reveal">
       <span class="section-label">Enterprise IT Services</span>
       <h2>Comprehensive Enterprise IT &amp; Cyber security Services<span class="red-dot">.</span></h2>
       <p>Delivering integrated operational, security, and transformation capabilities to help organizations optimize performance, strengthen resilience, and accelerate digital innovation.</p>
@@ -140,7 +140,7 @@ include 'includes/header.php';
 <!-- ══════════════ SECTION 2: IT RESOURCE AUGMENTATION ══════════════ -->
 <section class="section" id="resource-augmentation" aria-label="Resource Augmentation">
   <div class="container">
-    <div class="section-header reveal">
+    <div class="section-header left-align reveal">
       <span class="section-label">Resource Augmentation</span>
       <h2>Build High-Performing IT Teams, Faster and Accelerate IT Operations with Skilled Infrastructure Experts<span class="red-dot">.</span></h2>
       <p>In today's rapidly evolving technology landscape, organizations need agile access to specialized talent to support digital transformation initiatives, infrastructure upgrades, cloud adoption, cyber security programs, and ongoing IT operations. Waiting months to recruit and onboard resources can impact project timelines and business outcomes. AB&amp;D bridges this gap by providing certified and experienced professionals across key technology domains, enabling enterprises to scale resources on demand while maintaining operational excellence.</p>
@@ -188,7 +188,7 @@ include 'includes/header.php';
 <!-- ══════════════ SECTION 3: FLEXIBLE ENGAGEMENT MODELS ══════════════ -->
 <section class="section section-bg-alt" id="engagement-models" aria-label="Engagement Models">
   <div class="container">
-    <div class="section-header reveal">
+    <div class="section-header left-align reveal">
       <span class="section-label">Engagement Models</span>
       <h2>Flexible Engagement Models Tailored to Enterprise IT Needs<span class="red-dot">.</span></h2>
       <p>Whether you need a single specialist or an extended technical team, AB&amp;D delivers the right talent, at the right time, to support your infrastructure operations, digital transformation programs, cloud initiatives, and business-critical projects. Scale confidently, optimize costs, and accelerate outcomes with enterprise-ready IT professionals who bring deep technical expertise and proven operational experience.</p>
@@ -231,7 +231,7 @@ include 'includes/header.php';
 <!-- ══════════════ SECTION 4: PROCUREMENT & LICENSING ══════════════ -->
 <section class="section" id="it-procurement" aria-label="IT Procurement & Licensing">
   <div class="container">
-    <div class="section-header reveal">
+    <div class="section-header left-align reveal">
       <span class="section-label">IT Sourcing &amp; Procurement</span>
       <h2>Streamlined IT Procurement, Licensing, and Lifecycle Management<span class="red-dot">.</span></h2>
       <p>AB&amp;D helps enterprises buy, license, and renew critical IT and security platforms—all under one roof. As an authorized partner to top global OEMs, we simplify complex procurement processes, offer the best-fit licensing models, and provide post-purchase support aligned with compliance and usage needs.</p>

@@ -39,7 +39,7 @@ include 'includes/header.php';
 
     <!-- Featured Products Showcase -->
     <div class="featured-products-showcase reveal" style="margin-top: 2.5rem; margin-bottom: 3.5rem;">
-      <h2 style="font-size: 1.6rem; font-weight: 800; margin-bottom: 1.5rem; text-align: center; border-bottom: 2px solid var(--clr-border); padding-bottom: 0.8rem;">Featured Software Solutions</h2>
+      <h2 style="font-size: 1.6rem; font-weight: 800; margin-bottom: 1.5rem; text-align: left; border-bottom: 2px solid var(--clr-border); padding-bottom: 0.8rem;">Featured Software Solutions</h2>
       
       <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
         
@@ -204,7 +204,7 @@ include 'includes/header.php';
 <!-- ══════════════ PRODUCT CATEGORIES ══════════════ -->
 <section class="section" aria-label="Product categories">
   <div class="container">
-    <div class="section-header reveal">
+    <div class="section-header left-align reveal">
       <span class="section-label">Browse by Category</span>
       <h2>Product Categories We Support<span class="red-dot">.</span></h2>
     </div>
@@ -238,7 +238,7 @@ include 'includes/header.php';
 <section class="cta-section" aria-label="Products CTA">
   <div class="container">
     <div class="reveal">
-      <span class="section-label" style="background:rgba(37,99,235,0.15);border-color:rgba(37,99,235,0.3);color:#60a5fa;">Request a Quote</span>
+      <span class="section-label" style="background:rgba(194,30,37,0.12);border-color:rgba(194,30,37,0.25);color:var(--clr-blue-light);">Request a Quote</span>
       <h2>Can't find a specific product or software?<span class="red-dot">.</span></h2>
       <p>Contact our procurement team — we source from a wide vendor ecosystem and can help with custom software licensing requirements.</p>
       <div class="cta-actions">

@@ -65,7 +65,7 @@ include 'includes/header.php';
 <section class="section section-bg-alt" id="all-solutions" aria-label="All solutions">
   <div class="container">
 
-    <div class="section-header reveal">
+    <div class="section-header left-align reveal">
       <span class="section-label">Our Solutions</span>
       <h2>Browse All Solutions<span class="red-dot">.</span></h2>
     </div>
