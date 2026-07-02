@@ -28,11 +28,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
     <!-- Logo -->
     <a href="index.php" class="nav-logo" aria-label="AB&D Software India Pvt Ltd Home">
-      <div class="nav-logo-mark">AB</div>
-      <div class="nav-logo-text">
-        <span class="nav-logo-name">AB&amp;D Software</span>
-        <span class="nav-logo-sub">India Pvt Ltd</span>
-      </div>
+      <img src="assets/images/logo.jpg" alt="AB&D Software India Logo" class="nav-logo-img">
     </a>
 
     <!-- Desktop Menu -->

@@ -61,236 +61,256 @@ include 'includes/header.php';
   </div>
 </section>
 
-<!-- ══════════════ Solutions & Services (Visual Photo Cards) ══════════════ -->
-<section class="section section-bg-alt" id="solutions-services" aria-label="Solutions and Services">
+<!-- ══════════════ SECTION 1: ENTERPRISE IT & CYBERSECURITY SERVICES ══════════════ -->
+<section class="section section-bg-alt" id="enterprise-it" aria-label="Enterprise IT & Cybersecurity">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">Solutions &amp; Services</span>
-      <h2>Solutions &amp; Services<span class="red-dot">.</span></h2>
-      <p>Explore AB&amp;D’s core technology services designed to help businesses source, secure, manage and modernize their IT ecosystem.</p>
+      <span class="section-label">Enterprise IT Services</span>
+      <h2>Comprehensive Enterprise IT &amp; Cybersecurity Services<span class="red-dot">.</span></h2>
+      <p>Delivering integrated operational, security, and transformation capabilities to help organizations optimize performance, strengthen resilience, and accelerate digital innovation.</p>
     </div>
 
-    <div class="mosaic-grid">
+    <div class="cards-grid-3" style="margin-bottom: 2rem;">
+      
+      <!-- IMS -->
+      <div class="card reveal" style="border-top: 4px solid var(--clr-blue);">
+        <div class="card-icon icon-blue"><i class="fa-solid fa-server"></i></div>
+        <h3 class="card-title">Infrastructure Management Services (IMS)</h3>
+        <p class="card-desc">End-to-end management of on-premises, hybrid, and multi-cloud infrastructure, including servers, storage, virtualization platforms, backup and recovery, databases, and network operations. Maximize availability, performance, scalability, and operational efficiency.</p>
+        <a href="contact.php?interest=IMS" class="card-link btn-ghost">Enquire Now <span class="arrow arr">→</span></a>
+      </div>
 
-      <!-- Card 1: Software Licensing & Procurement -->
-      <a href="contact.php?interest=licensing" class="visual-card visual-blue reveal" style="--card-img: url('../images/service-licensing.png');">
-        <div class="visual-card-bg"></div>
-        <span class="visual-card-badge">Most Requested</span>
-        <div class="visual-card-icon"><i class="fa-solid fa-file-signature"></i></div>
-        <div class="visual-card-content">
-          <h3 class="visual-card-title">Software Licensing &amp; Procurement</h3>
-          <p class="visual-card-desc">Genuine software licensing, vendor coordination and procurement support for modern organizations.</p>
-          <span class="visual-card-link">Learn More <span class="arr">&rarr;</span></span>
+      <!-- EMS -->
+      <div class="card reveal reveal-delay-1" style="border-top: 4px solid var(--clr-indigo);">
+        <div class="card-icon icon-indigo"><i class="fa-solid fa-network-wired"></i></div>
+        <h3 class="card-title">Enterprise Management Services (EMS)</h3>
+        <p class="card-desc">Centralized monitoring, administration, and optimization of enterprise applications, networks, collaboration platforms, and end-user computing environments through standardized ITSM processes, automation, and service governance.</p>
+        <a href="contact.php?interest=EMS" class="card-link btn-ghost">Enquire Now <span class="arrow arr">→</span></a>
+      </div>
+
+      <!-- ELM -->
+      <div class="card reveal reveal-delay-2" style="border-top: 4px solid var(--clr-rose);">
+        <div class="card-icon icon-rose"><i class="fa-solid fa-laptop"></i></div>
+        <h3 class="card-title">Endpoint Lifecycle Management (ELM)</h3>
+        <p class="card-desc">Comprehensive management of endpoint assets throughout their lifecycle—from procurement, provisioning, imaging, deployment, patch management, software distribution, and asset tracking to refresh, retirement, and secure disposal.</p>
+        <a href="contact.php?interest=ELM" class="card-link btn-ghost">Enquire Now <span class="arrow arr">→</span></a>
+      </div>
+
+      <!-- ALM -->
+      <div class="card reveal" style="border-top: 4px solid var(--clr-emerald);">
+        <div class="card-icon icon-emerald"><i class="fa-solid fa-arrows-spin"></i></div>
+        <h3 class="card-title">Application Lifecycle Management (ALM)</h3>
+        <p class="card-desc">End-to-end management of enterprise applications across planning, development, testing, deployment, maintenance, upgrades, and retirement. Improve application performance, governance, release management, and change control.</p>
+        <a href="contact.php?interest=ALM" class="card-link btn-ghost">Enquire Now <span class="arrow arr">→</span></a>
+      </div>
+
+      <!-- GRC -->
+      <div class="card reveal reveal-delay-1" style="border-top: 4px solid var(--clr-amber);">
+        <div class="card-icon icon-amber"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3 class="card-title">Governance, Risk &amp; Compliance (GRC)</h3>
+        <p class="card-desc">Compliance assessments, security audits, policy reviews, risk assessments, and control validation aligned with DPDP, ISO 27001, NIST, CIS, PCI-DSS, and industry-specific regulations to ensure compliance readiness.</p>
+        <a href="contact.php?interest=GRC" class="card-link btn-ghost">Enquire Now <span class="arrow arr">→</span></a>
+      </div>
+
+      <!-- Tech Consulting -->
+      <div class="card reveal reveal-delay-2" style="border-top: 4px solid var(--clr-violet);">
+        <div class="card-icon icon-violet"><i class="fa-solid fa-lightbulb"></i></div>
+        <h3 class="card-title">Technology Consulting &amp; Advisory</h3>
+        <p class="card-desc">Strategic consulting services covering enterprise architecture, cybersecurity strategy, infrastructure modernization, cloud adoption, operational excellence, IT governance, and technology roadmaps to support business growth.</p>
+        <a href="contact.php?interest=Consulting" class="card-link btn-ghost">Enquire Now <span class="arrow arr">→</span></a>
+      </div>
+
+    </div>
+
+    <!-- Digital Transformation Centered Highlight Box -->
+    <div class="card reveal" style="border-top: 4px solid var(--clr-blue); background: var(--clr-white); max-width: 800px; margin: 0 auto; padding: 2rem;">
+      <div style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;">
+        <div class="card-icon icon-cyan" style="margin: 0;"><i class="fa-solid fa-rocket"></i></div>
+        <div style="flex: 1; min-width: 250px;">
+          <h3 class="card-title" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Digital Transformation &amp; Modernization Services</h3>
+          <p class="card-desc" style="margin-bottom: 1rem;">Accelerate innovation through cloud migration, infrastructure modernization, workplace transformation, automation, DevOps enablement, application modernization, and process optimization initiatives that improve agility, scalability, and business resilience.</p>
+          <a href="contact.php?interest=Transformation" class="btn btn-primary btn-sm">Discuss Transformation <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-      </a>
+      </div>
+    </div>
 
-      <!-- Card 2: Cybersecurity Solutions -->
-      <a href="contact.php?interest=security" class="visual-card visual-rose reveal reveal-delay-1" style="--card-img: url('../images/service-cybersecurity.png');">
-        <div class="visual-card-bg"></div>
-        <span class="visual-card-badge">Security Focused</span>
-        <div class="visual-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-        <div class="visual-card-content">
-          <h3 class="visual-card-title">Cybersecurity Solutions</h3>
-          <p class="visual-card-desc">Security tools and protection solutions for applications, users and infrastructure.</p>
-          <span class="visual-card-link">Learn More <span class="arr">&rarr;</span></span>
-        </div>
-      </a>
-
-      <!-- Card 3: Cloud & Infrastructure Solutions -->
-      <a href="contact.php?interest=cloud" class="visual-card visual-cyan reveal reveal-delay-2" style="--card-img: url('../images/service-cloud.png');">
-        <div class="visual-card-bg"></div>
-        <span class="visual-card-badge">Cloud Ready</span>
-        <div class="visual-card-icon"><i class="fa-solid fa-cloud"></i></div>
-        <div class="visual-card-content">
-          <h3 class="visual-card-title">Cloud &amp; Infrastructure Solutions</h3>
-          <p class="visual-card-desc">Cloud, virtualization, backup, server and infrastructure modernization support.</p>
-          <span class="visual-card-link">Learn More <span class="arr">&rarr;</span></span>
-        </div>
-      </a>
-
-      <!-- Card 4: Developer Tools & Application Software -->
-      <a href="contact.php?interest=developer" class="visual-card visual-emerald reveal" style="--card-img: url('../images/service-developer-tools.png');">
-        <div class="visual-card-bg"></div>
-        <span class="visual-card-badge">Developer Stack</span>
-        <div class="visual-card-icon"><i class="fa-solid fa-code"></i></div>
-        <div class="visual-card-content">
-          <h3 class="visual-card-title">Developer Tools &amp; App Software</h3>
-          <p class="visual-card-desc">IDEs, testing tools, debugging platforms and productivity software for development teams.</p>
-          <span class="visual-card-link">Learn More <span class="arr">&rarr;</span></span>
-        </div>
-      </a>
-
-      <!-- Card 5: Document & Data Automation (Wide Card in Mosaic Grid) -->
-      <a href="contact.php?interest=automation" class="visual-card visual-wide visual-violet reveal reveal-delay-1" style="--card-img: url('../images/service-document-automation.png');">
-        <div class="visual-card-bg"></div>
-        <span class="visual-card-badge">Automation</span>
-        <div class="visual-card-icon"><i class="fa-solid fa-file-lines"></i></div>
-        <div class="visual-card-content">
-          <h3 class="visual-card-title">Document &amp; Data Automation</h3>
-          <p class="visual-card-desc">Document generation, file conversion, PDF processing and reporting workflow automation.</p>
-          <span class="visual-card-link">Learn More <span class="arr">&rarr;</span></span>
-        </div>
-      </a>
-
-      <!-- Card 6: Managed Support & Renewal Services -->
-      <a href="contact.php?interest=renewals" class="visual-card visual-amber reveal" style="--card-img: url('../images/service-support.png');">
-        <div class="visual-card-bg"></div>
-        <span class="visual-card-badge">Lifecycle Support</span>
-        <div class="visual-card-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
-        <div class="visual-card-content">
-          <h3 class="visual-card-title">Managed Support &amp; Renewals</h3>
-          <p class="visual-card-desc">Renewal tracking, support coordination, upgrade assistance and vendor communication.</p>
-          <span class="visual-card-link">Learn More <span class="arr">&rarr;</span></span>
-        </div>
-      </a>
-
-      <!-- Card 7: IT Asset & Vendor Management -->
-      <a href="contact.php?interest=assets" class="visual-card visual-teal reveal reveal-delay-1" style="--card-img: url('../images/service-asset-management.png');">
-        <div class="visual-card-bg"></div>
-        <span class="visual-card-badge">Cost Control</span>
-        <div class="visual-card-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
-        <div class="visual-card-content">
-          <h3 class="visual-card-title">IT Asset &amp; Vendor Management</h3>
-          <p class="visual-card-desc">Centralized asset planning, product comparison, procurement tracking and vendor management.</p>
-          <span class="visual-card-link">Learn More <span class="arr">&rarr;</span></span>
-        </div>
-      </a>
-
-      <!-- Card 8: IT Consulting & Advisory -->
-      <a href="contact.php?interest=consulting" class="visual-card visual-indigo reveal reveal-delay-2" style="--card-img: url('../images/service-consulting.png');">
-        <div class="visual-card-bg"></div>
-        <span class="visual-card-badge">Expert Guidance</span>
-        <div class="visual-card-icon"><i class="fa-solid fa-lightbulb"></i></div>
-        <div class="visual-card-content">
-          <h3 class="visual-card-title">IT Consulting &amp; Advisory</h3>
-          <p class="visual-card-desc">Technology recommendations, requirement analysis and procurement roadmap planning.</p>
-          <span class="visual-card-link">Learn More <span class="arr">&rarr;</span></span>
-        </div>
-      </a>
-
-    </div><!-- /mosaic-grid -->
   </div>
 </section>
 
-<!-- ══════════════ DETAILED SERVICE CAPABILITIES ══════════════ -->
-<section class="section" id="all-services" aria-label="Detailed service capabilities">
+<!-- ══════════════ SECTION 2: IT RESOURCE AUGMENTATION ══════════════ -->
+<section class="section" id="resource-augmentation" aria-label="Resource Augmentation">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">Capabilities</span>
-      <h2>Detailed Service Capabilities<span class="red-dot">.</span></h2>
-      <p>A comprehensive overview of our technical capabilities, tools, and processes across all eight core technology areas.</p>
+      <span class="section-label">Resource Augmentation</span>
+      <h2>Build High-Performing IT Teams, Faster<span class="red-dot">.</span></h2>
+      <p>Accelerate IT operations with skilled infrastructure experts. Scale resources on demand without the recruitment overhead.</p>
     </div>
 
-    <div class="cards-grid-3">
-
-      <?php
-      $services = [
-        [
-          'icon'=>'fa-solid fa-file-certificate', 'color'=>'icon-blue',
-          'title'=>'Software Licensing &amp; Procurement',
-          'desc' =>'Simplify software buying with genuine licensing, competitive pricing, vendor coordination and procurement support for enterprise, SMB, government and financial customers.',
-          'feats'=>['Genuine software licensing','Competitive pricing support','Product sourcing & selection','Vendor coordination','Renewal assistance'],
-          'badge'=>'Most Requested',
-        ],
-        [
-          'icon'=>'fa-solid fa-lightbulb', 'color'=>'icon-indigo',
-          'title'=>'IT Consulting &amp; Advisory',
-          'desc' =>'Get expert guidance to identify the right technology products, platforms and solutions based on your business requirements, technical environment and budget.',
-          'feats'=>['Requirement analysis','Product comparison','Technology recommendation','Procurement roadmap','Cost optimization'],
-        ],
-        [
-          'icon'=>'fa-solid fa-shield-halved', 'color'=>'icon-rose',
-          'title'=>'Cybersecurity Solutions',
-          'desc' =>'Strengthen your security posture with tools and solutions for endpoint protection, application security testing, vulnerability assessment and compliance-focused needs.',
-          'feats'=>['Endpoint protection','Application security tools','Vulnerability testing','Security software sourcing','Compliance-ready solutions'],
-          'badge'=>'Security Focused',
-        ],
-        [
-          'icon'=>'fa-solid fa-cloud', 'color'=>'icon-cyan',
-          'title'=>'Cloud &amp; Infrastructure Solutions',
-          'desc' =>'Modernize your IT infrastructure with cloud, virtualization, server, storage, backup and networking solutions designed for scalability and reliability.',
-          'feats'=>['Cloud software support','Virtualization tools','Server &amp; storage sourcing','Backup &amp; recovery solutions','Infrastructure optimization'],
-          'badge'=>'Cloud Ready',
-        ],
-        [
-          'icon'=>'fa-solid fa-code', 'color'=>'icon-emerald',
-          'title'=>'Developer Tools &amp; Application Software',
-          'desc' =>'Equip development teams with trusted IDEs, testing tools, debugging tools, profiling software, documentation platforms and productivity applications.',
-          'feats'=>['IDE &amp; code editor tools','Testing &amp; QA software','Debugging &amp; profiling tools','Documentation tools','Team productivity software'],
-          'badge'=>'Developer Stack',
-        ],
-        [
-          'icon'=>'fa-solid fa-file-lines', 'color'=>'icon-violet',
-          'title'=>'Document &amp; Data Automation',
-          'desc' =>'Automate document generation, file conversion, PDF processing, reporting, spreadsheet handling and enterprise data workflows for greater operational efficiency.',
-          'feats'=>['PDF automation &amp; processing','File format conversion','Document generation','Spreadsheet processing','Reporting workflows'],
-        ],
-        [
-          'icon'=>'fa-solid fa-arrows-rotate', 'color'=>'icon-amber',
-          'title'=>'Managed Support &amp; Renewal Services',
-          'desc' =>'Stay on top of renewals, upgrades, license validity and support coordination through one reliable technology partner who manages the full lifecycle.',
-          'feats'=>['Renewal tracking','License lifecycle support','Upgrade coordination','Support escalation handling','Vendor communication'],
-        ],
-        [
-          'icon'=>'fa-solid fa-boxes-stacked', 'color'=>'icon-teal',
-          'title'=>'IT Asset &amp; Vendor Management',
-          'desc' =>'Centralize product comparison, vendor communication, IT asset planning and procurement workflows to reduce operational complexity and control costs.',
-          'feats'=>['Vendor management','Asset planning &amp; tracking','Product comparison','Procurement tracking','Cost control &amp; optimization'],
-        ],
-      ];
-      foreach ($services as $i => $s): ?>
-
-      <div class="card reveal <?= $i >= 3 ? 'reveal-delay-'.min($i-2, 5) : '' ?>">
-        <?php if (!empty($s['badge'])): ?>
-        <span class="card-badge"><?= $s['badge'] ?></span>
-        <?php endif; ?>
-        <div class="card-num"><?= str_pad($i+1, 2, '0', STR_PAD_LEFT) ?></div>
-        <div class="card-icon <?= $s['color'] ?>">
-          <i class="<?= $s['icon'] ?>"></i>
-        </div>
-        <h2 class="card-title"><?= $s['title'] ?></h2>
-        <p class="card-desc"><?= $s['desc'] ?></p>
-        <ul class="card-features">
-          <?php foreach ($s['feats'] as $f): ?>
-          <li><?= $f ?></li>
-          <?php endforeach; ?>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin-bottom: 1.5rem;">
+      
+      <!-- Resource Expertise -->
+      <div class="reveal">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1.2rem; border-left: 4px solid var(--clr-blue); padding-left: 0.8rem; color: var(--clr-dark);">Our Resource Expertise Includes</h3>
+        <p style="margin-bottom: 1.5rem;">We bridge the skills gap by providing certified and experienced professionals across key technology domains, seamlessly integrating with your teams and workflows:</p>
+        
+        <ul style="display: grid; grid-template-columns: 1fr; gap: 0.8rem;">
+          <li style="display:flex; align-items:center; gap:0.6rem; font-weight:600; color:var(--clr-muted);"><i class="fa-solid fa-circle-check" style="color:var(--clr-blue);"></i> Infrastructure Engineers &amp; System Administrators</li>
+          <li style="display:flex; align-items:center; gap:0.6rem; font-weight:600; color:var(--clr-muted);"><i class="fa-solid fa-circle-check" style="color:var(--clr-blue);"></i> Network Engineers &amp; Network Operations Specialists</li>
+          <li style="display:flex; align-items:center; gap:0.6rem; font-weight:600; color:var(--clr-muted);"><i class="fa-solid fa-circle-check" style="color:var(--clr-blue);"></i> Cloud Architects &amp; Cloud Operations Engineers</li>
+          <li style="display:flex; align-items:center; gap:0.6rem; font-weight:600; color:var(--clr-muted);"><i class="fa-solid fa-circle-check" style="color:var(--clr-blue);"></i> Data Center &amp; Virtualization Experts</li>
+          <li style="display:flex; align-items:center; gap:0.6rem; font-weight:600; color:var(--clr-muted);"><i class="fa-solid fa-circle-check" style="color:var(--clr-blue);"></i> Storage &amp; Backup Administrators</li>
+          <li style="display:flex; align-items:center; gap:0.6rem; font-weight:600; color:var(--clr-muted);"><i class="fa-solid fa-circle-check" style="color:var(--clr-blue);"></i> Cybersecurity Analysts &amp; Security Engineers</li>
+          <li style="display:flex; align-items:center; gap:0.6rem; font-weight:600; color:var(--clr-muted);"><i class="fa-solid fa-circle-check" style="color:var(--clr-blue);"></i> DevOps &amp; Automation Specialists</li>
+          <li style="display:flex; align-items:center; gap:0.6rem; font-weight:600; color:var(--clr-muted);"><i class="fa-solid fa-circle-check" style="color:var(--clr-blue);"></i> Technical Support &amp; IT Operations Professionals</li>
         </ul>
-        <a href="contact.php" class="card-link btn-ghost">Request This Service <span class="arr">→</span></a>
       </div>
 
-      <?php endforeach; ?>
+      <!-- Why Choose AB&D -->
+      <div class="card reveal reveal-delay-2" style="border-top: 4px solid var(--clr-red); background: var(--clr-bg); padding: 2.2rem;">
+        <h3 style="font-size: 1.4rem; margin-bottom: 1rem; color: var(--clr-dark);">Why Choose AB&amp;D Resource Augmentation?</h3>
+        <p style="margin-bottom: 1.2rem; font-size: 0.92rem;">Leverage our 15+ years of enterprise infrastructure and technology services experience:</p>
+        
+        <ul style="display: flex; flex-direction: column; gap: 0.7rem;">
+          <li style="display:flex; gap:0.5rem; font-size:0.9rem; line-height:1.4;"><span style="color:var(--clr-red); font-weight:bold;">✓</span> <span><strong>Rapid deployment</strong> of pre-vetted, certified IT professionals</span></li>
+          <li style="display:flex; gap:0.5rem; font-size:0.9rem; line-height:1.4;"><span style="color:var(--clr-red); font-weight:bold;">✓</span> <span><strong>Flexible engagement models</strong> for short-term or long-term needs</span></li>
+          <li style="display:flex; gap:0.5rem; font-size:0.9rem; line-height:1.4;"><span style="color:var(--clr-red); font-weight:bold;">✓</span> <span><strong>Multi-environment expertise</strong> (on-premises, hybrid, and cloud)</span></li>
+          <li style="display:flex; gap:0.5rem; font-size:0.9rem; line-height:1.4;"><span style="color:var(--clr-red); font-weight:bold;">✓</span> <span><strong>Reduced overheads</strong> associated with recruitment and onboarding</span></li>
+          <li style="display:flex; gap:0.5rem; font-size:0.9rem; line-height:1.4;"><span style="color:var(--clr-red); font-weight:bold;">✓</span> <span><strong>Faster execution</strong> and reduced time-to-productivity for critical projects</span></li>
+          <li style="display:flex; gap:0.5rem; font-size:0.9rem; line-height:1.4;"><span style="color:var(--clr-red); font-weight:bold;">✓</span> <span><strong>Seamless integration</strong> with your existing teams, tools and workflows</span></li>
+        </ul>
+        <a href="contact.php?interest=Augmentation" class="btn btn-primary" style="margin-top: 1.5rem; width: 100%; justify-content: center;">Request Resource Profile</a>
+      </div>
 
-    </div><!-- /cards-grid-3 -->
+    </div>
   </div>
 </section>
 
-<!-- ══════════════ WHY CHOOSE AB&D ══════════════ -->
-<section class="section" aria-label="Why choose AB&D">
+<!-- ══════════════ SECTION 3: FLEXIBLE ENGAGEMENT MODELS ══════════════ -->
+<section class="section section-bg-alt" id="engagement-models" aria-label="Engagement Models">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">Why AB&amp;D</span>
-      <h2>Why Choose AB&amp;D?<span class="red-dot">.</span></h2>
-      <p>We bring together genuine products, competitive pricing, wide vendor access and a customer-first support approach in one reliable technology partner.</p>
+      <span class="section-label">Engagement Models</span>
+      <h2>Flexible Engagement Models Tailored to Enterprise IT Needs<span class="red-dot">.</span></h2>
+      <p>Scale confidently, optimize costs, and accelerate outcomes with enterprise-ready IT professionals who bring deep technical expertise.</p>
     </div>
 
-    <div class="cards-grid-4">
-      <?php
-      $reasons = [
-        ['icon'=>'fa-solid fa-handshake','color'=>'icon-blue',   'title'=>'Trusted Technology Partner',   'desc'=>'Over two decades of experience in IT procurement and solutions delivery across India.', 'stat'=>'20+ Years'],
-        ['icon'=>'fa-solid fa-globe',    'color'=>'icon-indigo', 'title'=>'Wide Vendor Ecosystem',         'desc'=>'Access to global and specialized technology vendors under one reliable procurement partner.', 'stat'=>'50+ Brands'],
-        ['icon'=>'fa-solid fa-tags',     'color'=>'icon-emerald','title'=>'Cost-Effective Procurement',     'desc'=>'Competitive pricing, volume negotiation and smart sourcing to optimize your IT budget.', 'stat'=>'Best Pricing'],
-        ['icon'=>'fa-solid fa-headset',  'color'=>'icon-amber',  'title'=>'Reliable Support Coordination', 'desc'=>'Proactive support, renewal tracking and escalation management for a seamless experience.', 'stat'=>'24/7 Sync'],
-      ];
-      foreach ($reasons as $i => $r): ?>
-      <div class="why-card reveal reveal-delay-<?= $i+1 ?>">
-        <div class="why-icon <?= $r['color'] ?>"><i class="<?= $r['icon'] ?>"></i></div>
-        <h3 class="card-title"><?= $r['title'] ?></h3>
-        <p class="card-desc" style="font-size:0.88rem;"><?= $r['desc'] ?></p>
-        <?php if (!empty($r['stat'])): ?>
-        <span class="why-stat"><?= $r['stat'] ?></span>
-        <?php endif; ?>
+    <div class="cards-grid-3" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;">
+      
+      <!-- Short Term -->
+      <div class="card reveal" style="flex: 0 0 calc((100% - 1.5rem) / 2); width: calc((100% - 1.5rem) / 2); border-top: 4px solid var(--clr-blue);">
+        <div class="card-icon icon-blue"><i class="fa-solid fa-hourglass-half"></i></div>
+        <h3 class="card-title">Short-Term Contract Staffing</h3>
+        <p class="card-desc">Rapidly address urgent resource requirements with skilled, deployment-ready IT professionals to support critical operations, migrations, upgrades, or immediate project deadlines.</p>
       </div>
-      <?php endforeach; ?>
+
+      <!-- Long Term -->
+      <div class="card reveal reveal-delay-1" style="flex: 0 0 calc((100% - 1.5rem) / 2); width: calc((100% - 1.5rem) / 2); border-top: 4px solid var(--clr-indigo);">
+        <div class="card-icon icon-indigo"><i class="fa-solid fa-calendar-days"></i></div>
+        <h3 class="card-title">Long-Term Resource Augmentation</h3>
+        <p class="card-desc">Extend your internal IT capabilities with dedicated experts while minimizing recruitment, onboarding, retention, and long-term workforce management challenges.</p>
+      </div>
+
+      <!-- Project Based -->
+      <div class="card reveal" style="flex: 0 0 calc((100% - 1.5rem) / 2); width: calc((100% - 1.5rem) / 2); border-top: 4px solid var(--clr-rose);">
+        <div class="card-icon icon-rose"><i class="fa-solid fa-people-group"></i></div>
+        <h3 class="card-title">Project-Based Technical Teams</h3>
+        <p class="card-desc">Leverage complete, outcome-driven teams for infrastructure deployments, data center migrations, cloud adoption, network transformations, and technology modernization projects.</p>
+      </div>
+
+      <!-- Onsite/Remote -->
+      <div class="card reveal reveal-delay-1" style="flex: 0 0 calc((100% - 1.5rem) / 2); width: calc((100% - 1.5rem) / 2); border-top: 4px solid var(--clr-emerald);">
+        <div class="card-icon icon-emerald"><i class="fa-solid fa-house-laptop"></i></div>
+        <h3 class="card-title">Onsite, Remote, or Hybrid Resources</h3>
+        <p class="card-desc">Choose the engagement model that best aligns with your operational and infrastructure requirements, ensuring seamless collaboration and business continuity across locations.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SECTION 4: PROCUREMENT & LICENSING ══════════════ -->
+<section class="section" id="it-procurement" aria-label="IT Procurement & Licensing">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">IT Sourcing &amp; Procurement</span>
+      <h2>Streamlined IT Procurement, Licensing, and Lifecycle Management<span class="red-dot">.</span></h2>
+      <p>AB&amp;D helps enterprises buy, license, and renew critical IT and security platforms—all under one roof. We simplify complex procurement processes, offer best-fit licensing models, and provide post-purchase support.</p>
+    </div>
+
+    <div class="card reveal" style="border-top: 4px solid var(--clr-blue); background: var(--clr-bg); padding: 3rem 2rem;">
+      <h3 style="font-size: 1.5rem; text-align: center; margin-bottom: 2rem; color: var(--clr-dark);">Core Service Capabilities</h3>
+      
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+        
+        <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+          <div style="color: var(--clr-blue); font-size: 1.2rem; line-height: 1;"><i class="fa-solid fa-handshake"></i></div>
+          <div>
+            <h4 style="margin-bottom: 0.3rem;">Authorized Partner</h4>
+            <p style="margin:0; font-size: 0.88rem;">Authorized partner to 100+ global OEMs, ensuring direct sourcing, valid licensing, and authentic products.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+          <div style="color: var(--clr-blue); font-size: 1.2rem; line-height: 1;"><i class="fa-solid fa-clipboard-list"></i></div>
+          <div>
+            <h4 style="margin-bottom: 0.3rem;">Assessment &amp; Solution Advisory</h4>
+            <p style="margin:0; font-size: 0.88rem;">Technical assessment and objective advisory to map software solutions to your business and technology needs.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+          <div style="color: var(--clr-blue); font-size: 1.2rem; line-height: 1;"><i class="fa-solid fa-chart-line"></i></div>
+          <div>
+            <h4 style="margin-bottom: 0.3rem;">Licensing &amp; Subscription Optimization</h4>
+            <p style="margin:0; font-size: 0.88rem;">Audit usage and optimize licensing structures to eliminate waste, maximize ROI, and control subscription costs.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+          <div style="color: var(--clr-blue); font-size: 1.2rem; line-height: 1;"><i class="fa-solid fa-coins"></i></div>
+          <div>
+            <h4 style="margin-bottom: 0.3rem;">Procurement &amp; Commercial Management</h4>
+            <p style="margin:0; font-size: 0.88rem;">Streamlined transactional workflows, quote comparison, volume aggregation, and contract negotiation support.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+          <div style="color: var(--clr-blue); font-size: 1.2rem; line-height: 1;"><i class="fa-solid fa-gavel"></i></div>
+          <div>
+            <h4 style="margin-bottom: 0.3rem;">Compliance &amp; Governance Support</h4>
+            <p style="margin:0; font-size: 0.88rem;">Ensure audit readiness and regulatory alignment through strict licensing governance and documentation.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+          <div style="color: var(--clr-blue); font-size: 1.2rem; line-height: 1;"><i class="fa-solid fa-bell"></i></div>
+          <div>
+            <h4 style="margin-bottom: 0.3rem;">Dedicated Licensing &amp; Renewal Desk</h4>
+            <p style="margin:0; font-size: 0.88rem;">Proactive renewal alerts, compliance checks, and upgrade recommendations before licenses expire.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+          <div style="color: var(--clr-blue); font-size: 1.2rem; line-height: 1;"><i class="fa-solid fa-circle-question"></i></div>
+          <div>
+            <h4 style="margin-bottom: 0.3rem;">Pre- and Post-Sales Consulting</h4>
+            <p style="margin:0; font-size: 0.88rem;">Assistance from technical architects to assist with product installation, implementation, and vendor support routing.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+          <div style="color: var(--clr-blue); font-size: 1.2rem; line-height: 1;"><i class="fa-solid fa-earth-americas"></i></div>
+          <div>
+            <h4 style="margin-bottom: 0.3rem;">Local &amp; Cross-Border Licensing Support</h4>
+            <p style="margin:0; font-size: 0.88rem;">Navigate local tax compliance and cross-border vendor licensing regulations with ease.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="contact.php?interest=Licensing" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Connect with our Sourcing Desk</a>
+      </div>
     </div>
   </div>
 </section>

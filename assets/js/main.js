@@ -139,22 +139,94 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ── 9. Contact form feedback ── */
+  /* ── 9. Contact form AJAX handler ── */
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
+    const removeMessages = () => {
+      const oldAlerts = contactForm.querySelectorAll('.form-alert');
+      oldAlerts.forEach(el => el.remove());
+    };
+
     contactForm.addEventListener('submit', e => {
       e.preventDefault();
+      removeMessages();
+
       const btn = contactForm.querySelector('.form-submit');
-      const original = btn.textContent;
-      btn.textContent = '✓ Message Sent!';
-      btn.style.background = '#059669';
+      const original = btn.innerHTML;
+      
+      // Loading state
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
       btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = original;
-        btn.style.background = '';
+
+      const formData = new FormData(contactForm);
+
+      fetch('contact.php?ajax=1', {
+        method: 'POST',
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
+        const alertEl = document.createElement('div');
+        alertEl.className = 'form-alert';
+        alertEl.style.padding = '1rem';
+        alertEl.style.borderRadius = 'var(--radius-sm)';
+        alertEl.style.marginBottom = '1.5rem';
+        alertEl.style.fontSize = '0.9rem';
+        alertEl.style.borderLeft = '4px solid';
+        alertEl.style.animation = 'fadeInCard 0.3s ease';
+
+        if (data.status === 'success') {
+          // Success Feedback
+          btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Message Sent!';
+          btn.style.background = '#059669';
+          btn.style.borderColor = '#059669';
+
+          alertEl.style.background = '#d1fae5';
+          alertEl.style.borderColor = '#10b981';
+          alertEl.style.color = '#065f46';
+          alertEl.textContent = data.message;
+
+          // Insert alert before form inputs
+          contactForm.insertBefore(alertEl, contactForm.querySelector('.form-row'));
+          contactForm.reset();
+
+          setTimeout(() => {
+            btn.innerHTML = original;
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            btn.disabled = false;
+          }, 5000);
+        } else {
+          // Error Feedback
+          btn.innerHTML = original;
+          btn.disabled = false;
+
+          alertEl.style.background = '#fee2e2';
+          alertEl.style.borderColor = '#ef4444';
+          alertEl.style.color = '#991b1b';
+          alertEl.textContent = data.message;
+
+          contactForm.insertBefore(alertEl, contactForm.querySelector('.form-row'));
+        }
+      })
+      .catch(err => {
+        btn.innerHTML = original;
         btn.disabled = false;
-        contactForm.reset();
-      }, 4000);
+
+        const alertEl = document.createElement('div');
+        alertEl.className = 'form-alert';
+        alertEl.style.padding = '1rem';
+        alertEl.style.borderRadius = 'var(--radius-sm)';
+        alertEl.style.marginBottom = '1.5rem';
+        alertEl.style.fontSize = '0.9rem';
+        alertEl.style.borderLeft = '4px solid #ef4444';
+        alertEl.style.background = '#fee2e2';
+        alertEl.style.color = '#991b1b';
+        alertEl.textContent = 'A network error occurred. Please try again or email us directly.';
+        alertEl.style.animation = 'fadeInCard 0.3s ease';
+
+        contactForm.insertBefore(alertEl, contactForm.querySelector('.form-row'));
+      });
     });
   }
 

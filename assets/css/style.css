@@ -183,6 +183,15 @@ p  { font-size: 0.95rem; color: var(--clr-muted); line-height: 1.7; } /* 15px-16
   display: flex; align-items: center; gap: 0.7rem; flex-shrink: 0;
   text-decoration: none;
 }
+.nav-logo-img {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  transition: var(--transition);
+}
+.nav-logo:hover .nav-logo-img {
+  transform: scale(1.03);
+}
 .nav-logo-mark {
   width: 42px; height: 42px;
   background: linear-gradient(135deg, var(--clr-blue), #1d4ed8);

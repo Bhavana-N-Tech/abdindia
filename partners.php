@@ -14,6 +14,60 @@ include 'includes/header.php';
   </div>
 </section>
 
+<!-- ══════════════ PRIMARY PARTNERS (KEYSHOT & SOURCE INSIGHT) ══════════════ -->
+<section class="section" id="primary-partners" aria-label="Primary Partners">
+  <div class="container">
+    
+    <div class="section-header reveal">
+      <span class="section-label">Strategic Alliances</span>
+      <h2>Primary Partner Brands<span class="red-dot">.</span></h2>
+      <p>AB&amp;D is a value-added reseller for world-class developer tools and design visualization platforms, serving clients and resellers across India.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-bottom: 2rem;">
+      
+      <!-- KeyShot Strategic Card -->
+      <div class="card reveal" style="border-top: 4px solid var(--clr-rose); background: var(--clr-white); display: flex; flex-direction: column;">
+        <span class="card-badge" style="background: var(--clr-rose);">Authorized Reseller</span>
+        <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.2rem;">
+          <div class="card-icon icon-rose" style="margin: 0; width: 56px; height: 56px; border-radius: 14px; font-size: 1.4rem;"><i class="fa-solid fa-cube"></i></div>
+          <div>
+            <h3 style="font-size: 1.4rem; margin: 0; color: var(--clr-dark);">KeyShot Studio AI</h3>
+            <span style="font-size: 0.8rem; font-weight: 600; color: var(--clr-muted);">Luxion Inc.</span>
+          </div>
+        </div>
+        <p class="card-desc" style="font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.2rem;">
+          AB&amp;D Software remains a trusted value-added reseller for KeyShot Studio in India. We supply genuine corporate, educational, and commercial licenses, offering pre-sales consulting and post-purchase deployment support.
+        </p>
+        <div style="display: flex; gap: 1rem; margin-top: auto; padding-top: 1.2rem;">
+          <a href="products.php" class="btn btn-outline-dark btn-sm" style="flex: 1; justify-content: center;">View Product Specs</a>
+          <a href="contact.php?interest=Developer%20Tools&message=We%20need%20a%20price%20quote%20for%20KeyShot%20Studio%20AI%20licensing." class="btn btn-primary btn-sm" style="flex: 1; justify-content: center; box-shadow: none;">Request a Quote</a>
+        </div>
+      </div>
+
+      <!-- Source Insight Strategic Card -->
+      <div class="card reveal reveal-delay-1" style="border-top: 4px solid var(--clr-blue); background: var(--clr-white); display: flex; flex-direction: column;">
+        <span class="card-badge" style="background: var(--clr-blue);">Authorized Reseller</span>
+        <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.2rem;">
+          <div class="card-icon icon-blue" style="margin: 0; width: 56px; height: 56px; border-radius: 14px; font-size: 1.4rem;"><i class="fa-solid fa-code"></i></div>
+          <div>
+            <h3 style="font-size: 1.4rem; margin: 0; color: var(--clr-dark);">Source Insight</h3>
+            <span style="font-size: 0.8rem; font-weight: 600; color: var(--clr-muted);">Source Dynamics Inc.</span>
+          </div>
+        </div>
+        <p class="card-desc" style="font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.2rem;">
+          We are the primary sourcing partner for Source Insight in India. Our dedicated licensing desk ensures rapid deployment, volume licensing optimization, and seamless renewals for enterprise developer teams.
+        </p>
+        <div style="display: flex; gap: 1rem; margin-top: auto; padding-top: 1.2rem;">
+          <a href="products.php" class="btn btn-outline-dark btn-sm" style="flex: 1; justify-content: center;">View Product Specs</a>
+          <a href="contact.php?interest=Developer%20Tools&message=We%20need%20a%20price%20quote%20for%20Source%20Insight%20programming%20editor%20licenses." class="btn btn-primary btn-sm" style="flex: 1; justify-content: center; box-shadow: none;">Request a Quote</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ══════════════ PARTNER CATEGORIES ══════════════ -->
 <section class="section section-bg-alt" aria-label="All partners">
   <div class="container">

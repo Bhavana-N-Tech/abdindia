@@ -6,10 +6,7 @@
       <!-- Brand Column -->
       <div class="footer-brand">
         <div class="footer-logo">
-          <div class="footer-logo-mark">AB</div>
-          <div>
-            <div class="footer-logo-name">AB&amp;D Software India Pvt Ltd</div>
-          </div>
+          <img src="assets/images/logo.jpg" alt="AB&D Software India Logo" class="footer-logo-img" style="height: 42px; background: #fff; padding: 4px; border-radius: var(--radius-sm); width: auto; object-fit: contain;">
         </div>
         <p class="footer-brand-desc">Trusted IT procurement, software licensing and technology solutions partner for enterprises, SMBs, government and financial organizations across India.</p>
         <div style="display:flex;gap:0.6rem;margin-top:0.5rem;">
@@ -37,12 +34,12 @@
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="services.php">Software Licensing</a></li>
+          <li><a href="services.php">Software Sourcing</a></li>
           <li><a href="services.php">IT Consulting</a></li>
           <li><a href="services.php">Cybersecurity</a></li>
           <li><a href="services.php">Cloud Solutions</a></li>
           <li><a href="services.php">Developer Tools</a></li>
-          <li><a href="services.php">Document Automation</a></li>
+          <li><a href="services.php">Document Sourcing</a></li>
           <li><a href="services.php">Renewals &amp; Support</a></li>
         </ul>
       </div>
@@ -52,15 +49,15 @@
         <h4>Contact Us</h4>
         <div class="footer-contact-row">
           <i class="fa-solid fa-envelope footer-contact-icon"></i>
-          <span>sales@abdindia.co.in</span>
+          <span><a href="mailto:sales@abdindia.co.in" style="color: inherit; text-decoration: none;">sales@abdindia.co.in</a></span>
         </div>
         <div class="footer-contact-row">
           <i class="fa-solid fa-phone footer-contact-icon"></i>
-          <span>+91 &ndash; Contact for number</span>
+          <span><a href="tel:+919632227977" style="color: inherit; text-decoration: none;">+91 96322 27977</a></span>
         </div>
         <div class="footer-contact-row">
           <i class="fa-solid fa-location-dot footer-contact-icon"></i>
-          <span>India — Pan-India Operations &amp; Customer Support</span>
+          <span style="font-size: 0.85rem; line-height: 1.4; color: rgba(255,255,255,0.7);">AB&amp;D Software India P Ltd<br>2079, C Block, Sahakar Nagar,<br>Kodigehalli, Bangalore 560092</span>
         </div>
         <a href="contact.php" class="btn btn-outline-dark btn-sm" style="margin-top:1.2rem;border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.6);" onmouseover="this.style.borderColor='#2563eb';this.style.color='#fff';this.style.background='rgba(37,99,235,0.2)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.2)';this.style.color='rgba(255,255,255,0.6)';this.style.background='transparent';">
           <i class="fa-solid fa-paper-plane"></i> Send Enquiry

@@ -353,7 +353,7 @@ include 'includes/header.php';
 
     <div class="partner-grid reveal">
       <?php
-      $partners = ['Microsoft','Adobe','Autodesk','JetBrains','Symantec','VMware','Citrix','Oracle','Atlassian','IDERA','Bitdefender','Veeam','ManageEngine','Kaspersky','Kofax','Foxit','Progress','Devart'];
+      $partners = ['Microsoft','Adobe','Autodesk','JetBrains','KeyShot','Source Insight','Symantec','VMware','Citrix','Oracle','Atlassian','IDERA','Bitdefender','Veeam','ManageEngine','Kaspersky','Kofax','Foxit','Progress','Devart'];
       foreach($partners as $p): ?>
       <div class="partner-logo"><span><?= $p ?></span></div>
       <?php endforeach; ?>

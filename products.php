@@ -37,6 +37,91 @@ include 'includes/header.php';
       <button class="filter-chip" data-filter="hardware">Hardware</button>
     </div>
 
+    <!-- Featured Products Showcase -->
+    <div class="featured-products-showcase reveal" style="margin-top: 2.5rem; margin-bottom: 3.5rem;">
+      <h2 style="font-size: 1.6rem; font-weight: 800; margin-bottom: 1.5rem; text-align: center; border-bottom: 2px solid var(--clr-border); padding-bottom: 0.8rem;">Featured Software Solutions</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+        
+        <!-- KeyShot -->
+        <div class="card" style="border-top: 4px solid var(--clr-rose); background: var(--clr-white); display: flex; flex-direction: column;">
+          <span class="card-badge" style="background: var(--clr-rose);">3D Visualization</span>
+          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.2rem;">
+            <div class="card-icon icon-rose" style="margin: 0; width: 48px; height: 48px; border-radius: 12px; font-size: 1.2rem;"><i class="fa-solid fa-cube"></i></div>
+            <div>
+              <h3 style="font-size: 1.25rem; margin: 0; color: var(--clr-dark);">KeyShot Studio AI</h3>
+              <span style="font-size: 0.78rem; font-weight: 600; color: var(--clr-muted);">by Luxion</span>
+            </div>
+          </div>
+          <p class="card-desc" style="font-size: 0.92rem; margin-bottom: 1.2rem;">Industry-leading real-time 3D rendering and animation software. Sourced directly for engineers, product designers, and artists across India.</p>
+          <ul class="card-features" style="margin-bottom: 1.5rem; flex: 1;">
+            <li style="font-size: 0.88rem; padding: 0.2rem 0; color: var(--clr-muted);">Local Generative AI features (Restyle, Background, Imagine, and Replace modes) that run locally to keep CAD data private</li>
+            <li style="font-size: 0.88rem; padding: 0.2rem 0; color: var(--clr-muted);">Real-time ray tracing engine (CPU/GPU-based) showing instant lighting, material, and perspective viewport changes</li>
+            <li style="font-size: 0.88rem; padding: 0.2rem 0; color: var(--clr-muted);">LiveLinking CAD integrations to sync updates without losing material settings</li>
+          </ul>
+          <a href="contact.php?interest=Developer%20Tools&message=I%20am%20interested%20in%20KeyShot%20Studio%20AI%20licensing." class="btn btn-primary btn-sm" style="justify-content: center;">Enquire for KeyShot <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Source Insight -->
+        <div class="card" style="border-top: 4px solid var(--clr-blue); background: var(--clr-white); display: flex; flex-direction: column;">
+          <span class="card-badge" style="background: var(--clr-blue);">Code Analysis</span>
+          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.2rem;">
+            <div class="card-icon icon-blue" style="margin: 0; width: 48px; height: 48px; border-radius: 12px; font-size: 1.2rem;"><i class="fa-solid fa-code"></i></div>
+            <div>
+              <h3 style="font-size: 1.25rem; margin: 0; color: var(--clr-dark);">Source Insight</h3>
+              <span style="font-size: 0.78rem; font-weight: 600; color: var(--clr-muted);">by Source Dynamics</span>
+            </div>
+          </div>
+          <p class="card-desc" style="font-size: 0.92rem; margin-bottom: 1.2rem;">Project-oriented programming editor, code browser, and analyzer specifically designed for large, complex codebases.</p>
+          <ul class="card-features" style="margin-bottom: 1.5rem; flex: 1;">
+            <li style="font-size: 0.88rem; padding: 0.2rem 0; color: var(--clr-muted);">Real-time dynamic symbol database that parses code and maps functions/classes without compilation</li>
+            <li style="font-size: 0.88rem; padding: 0.2rem 0; color: var(--clr-muted);">Relationship graphing to automatically generate call trees and class inheritance diagrams</li>
+            <li style="font-size: 0.88rem; padding: 0.2rem 0; color: var(--clr-muted);">Context-sensitive syntax formatting, symbolic auto-completion, and project-wide Smart Rename refactoring</li>
+          </ul>
+          <a href="contact.php?interest=Developer%20Tools&message=I%20am%20interested%20in%20Source%20Insight%20programming%20editor." class="btn btn-primary btn-sm" style="justify-content: center;">Enquire for Source Insight <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Beyond Compare -->
+        <div class="card" style="border-top: 4px solid var(--clr-emerald); background: var(--clr-white); display: flex; flex-direction: column;">
+          <span class="card-badge" style="background: var(--clr-emerald);">Data Comparison</span>
+          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.2rem;">
+            <div class="card-icon icon-emerald" style="margin: 0; width: 48px; height: 48px; border-radius: 12px; font-size: 1.2rem;"><i class="fa-solid fa-arrows-left-right"></i></div>
+            <div>
+              <h3 style="font-size: 1.25rem; margin: 0; color: var(--clr-dark);">Beyond Compare</h3>
+              <span style="font-size: 0.78rem; font-weight: 600; color: var(--clr-muted);">by Scooter Software</span>
+            </div>
+          </div>
+          <p class="card-desc" style="font-size: 0.92rem; margin-bottom: 1.2rem;">Robust cross-platform utility for comparing, merging, and synchronizing files, folders, and directories.</p>
+          <ul class="card-features" style="margin-bottom: 1.5rem; flex: 1;">
+            <li style="font-size: 0.88rem; padding: 0.2rem 0; color: var(--clr-muted);">Side-by-side folder comparison, sync utilities, and advanced 3-Way Merge (Pro edition)</li>
+            <li style="font-size: 0.88rem; padding: 0.2rem 0; color: var(--clr-muted);">Dedicated file viewers for text (syntax highlighted), CSV/Excel tables, images, and binary comparison</li>
+            <li style="font-size: 0.88rem; padding: 0.2rem 0; color: var(--clr-muted);">Seamless Git integration as an external diff and merge engine; compatible with Windows, macOS, and Linux</li>
+          </ul>
+          <a href="contact.php?interest=Developer%20Tools&message=I%20am%20interested%20in%20Beyond%20Compare%20licensing." class="btn btn-primary btn-sm" style="justify-content: center;">Enquire for Beyond Compare <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- PDF-XChange Editor -->
+        <div class="card" style="border-top: 4px solid var(--clr-indigo); background: var(--clr-white); display: flex; flex-direction: column;">
+          <span class="card-badge" style="background: var(--clr-indigo);">PDF Sourcing</span>
+          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.2rem;">
+            <div class="card-icon icon-indigo" style="margin: 0; width: 48px; height: 48px; border-radius: 12px; font-size: 1.2rem;"><i class="fa-solid fa-file-pdf"></i></div>
+            <div>
+              <h3 style="font-size: 1.25rem; margin: 0; color: var(--clr-dark);">PDF-XChange Editor</h3>
+              <span style="font-size: 0.78rem; font-weight: 600; color: var(--clr-muted);">by Tracker Software</span>
+            </div>
+          </div>
+          <p class="card-desc" style="font-size: 0.92rem; margin-bottom: 1.2rem;">Lightweight, fast, and feature-rich PDF editor, creator, and OCR manager designed specifically for Windows environments.</p>
+          <ul class="card-features" style="margin-bottom: 1.5rem; flex: 1;">
+            <li style="font-size: 0.88rem; padding: 0.2rem 0; color: var(--clr-muted);">Built-in OCR (Optical Character Recognition) to convert scanned pages into fully searchable and editable text</li>
+            <li style="font-size: 0.88rem; padding: 0.2rem 0; color: var(--clr-muted);">Comprehensive PDF editing, annotations, digital signatures, side-by-side comparison, and form creation (Plus version)</li>
+            <li style="font-size: 0.88rem; padding: 0.2rem 0; color: var(--clr-muted);">Cost-effective licensing models (perpetual licenses) that drastically reduce enterprise software overhead</li>
+          </ul>
+          <a href="contact.php?interest=Document%20Automation&message=I%20am%20interested%20in%20PDF-XChange%20Editor." class="btn btn-primary btn-sm" style="justify-content: center;">Enquire for PDF-XChange <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+
     <!-- Info Note -->
     <div class="info-note reveal">
       <i class="fa-solid fa-circle-info"></i> &nbsp;Looking for a specific product or software license? <a href="contact.php" style="color:var(--clr-blue);text-decoration:underline;">Contact AB&amp;D</a> for availability and pricing.
@@ -55,6 +140,8 @@ include 'includes/header.php';
         ['emoji'=>'🔍','name'=>'Dynatrace',              'cat'=>'Developer Tools','catkey'=>'developer'],
         ['emoji'=>'📊','name'=>'IDERA DevOps',           'cat'=>'Developer Tools','catkey'=>'developer'],
         ['emoji'=>'⚡','name'=>'Postman API',             'cat'=>'Developer Tools','catkey'=>'developer'],
+        ['emoji'=>'🔍','name'=>'Source Insight',         'cat'=>'Developer Tools','catkey'=>'developer'],
+        ['emoji'=>'🔄','name'=>'Beyond Compare',         'cat'=>'Developer Tools','catkey'=>'developer'],
         // Security
         ['emoji'=>'🛡️','name'=>'Bitdefender',           'cat'=>'Security Tools', 'catkey'=>'security'],
         ['emoji'=>'🔐','name'=>'Kaspersky Business',     'cat'=>'Security Tools', 'catkey'=>'security'],
@@ -68,6 +155,7 @@ include 'includes/header.php';
         ['emoji'=>'📋','name'=>'Adobe Acrobat',          'cat'=>'Document Automation','catkey'=>'document'],
         ['emoji'=>'🗂️','name'=>'iManage Docs',          'cat'=>'Document Automation','catkey'=>'document'],
         ['emoji'=>'🖨️','name'=>'PDF Creator Plus',      'cat'=>'Document Automation','catkey'=>'document'],
+        ['emoji'=>'📄','name'=>'PDF-XChange Editor',     'cat'=>'Document Automation','catkey'=>'document'],
         // Remote Access
         ['emoji'=>'🖥️','name'=>'Citrix Virtual Apps',  'cat'=>'Remote Access',  'catkey'=>'remote'],
         ['emoji'=>'🌐','name'=>'TeamViewer Tensor',      'cat'=>'Remote Access',  'catkey'=>'remote'],
@@ -82,6 +170,7 @@ include 'includes/header.php';
         ['emoji'=>'🎨','name'=>'Adobe Creative Cloud',  'cat'=>'Design & Media', 'catkey'=>'design'],
         ['emoji'=>'✏️','name'=>'CorelDRAW Graphics',    'cat'=>'Design & Media', 'catkey'=>'design'],
         ['emoji'=>'🖼️','name'=>'Affinity Suite',        'cat'=>'Design & Media', 'catkey'=>'design'],
+        ['emoji'=>'🎨','name'=>'KeyShot Studio AI',      'cat'=>'Design & Media', 'catkey'=>'design'],
         // Productivity
         ['emoji'=>'📧','name'=>'Microsoft 365',          'cat'=>'Productivity',   'catkey'=>'productivity'],
         ['emoji'=>'📱','name'=>'Slack Business',         'cat'=>'Productivity',   'catkey'=>'productivity'],
@@ -104,7 +193,7 @@ include 'includes/header.php';
         <div class="product-logo-wrap"><?= $p['emoji'] ?></div>
         <div class="product-name"><?= $p['name'] ?></div>
         <div class="product-cat"><?= $p['cat'] ?></div>
-        <button class="product-enquire" onclick="window.location='contact.php'">Enquire Now</button>
+        <button class="product-enquire" onclick="window.location='contact.php?interest=<?= urlencode($p['cat']) ?>&message=I%20am%20interested%20in%20<?= urlencode($p['name']) ?>.'">Enquire Now</button>
       </div>
       <?php endforeach; ?>
     </div><!-- /filterContainer -->
