@@ -319,7 +319,7 @@ include 'includes/header.php';
 <section class="cta-section" aria-label="Services CTA">
   <div class="container">
     <div class="reveal">
-      <span class="section-label" style="background:rgba(37,99,235,0.15);border-color:rgba(37,99,235,0.3);color:#60a5fa;">Get Started</span>
+      <span class="section-label" style="background:rgba(194,30,37,0.12);border-color:rgba(194,30,37,0.25);color:var(--clr-blue-light);">Get Started</span>
       <h2>Looking for the right software or IT solution?<span class="red-dot">.</span></h2>
       <p>Our experts help you find the right fit — from product selection to procurement and ongoing support.</p>
       <div class="cta-actions">

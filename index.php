@@ -68,7 +68,7 @@ include 'includes/header.php';
 
           <div class="hero-float-cards">
             <div class="hero-float-card">
-              <div class="hfc-icon" style="background: rgba(37,99,235,0.15); color: var(--clr-blue);"><i class="fa-solid fa-file-certificate"></i></div>
+              <div class="hfc-icon" style="background: rgba(194,30,37,0.15); color: var(--clr-blue);"><i class="fa-solid fa-file-certificate"></i></div>
               <div class="hfc-title">Software Licensing</div>
               <div class="hfc-sub">Genuine · Competitive</div>
             </div>
@@ -106,25 +106,25 @@ include 'includes/header.php';
     <div class="stats-grid">
 
       <div class="stat-item reveal">
-        <div class="stat-icon"><i class="fa-solid fa-award" style="color:#2563eb;"></i></div>
+        <div class="stat-icon"><i class="fa-solid fa-award" style="color:var(--clr-blue);"></i></div>
         <div class="stat-num" data-count="20" data-suffix="+ Yrs">0<span>+ Yrs</span></div>
         <div class="stat-label">IT Industry Expertise</div>
       </div>
 
       <div class="stat-item reveal reveal-delay-1">
-        <div class="stat-icon"><i class="fa-solid fa-map-location-dot" style="color:#2563eb;"></i></div>
+        <div class="stat-icon"><i class="fa-solid fa-map-location-dot" style="color:var(--clr-blue);"></i></div>
         <div class="stat-num">Pan‑<span>India</span></div>
         <div class="stat-label">Customer Support Coverage</div>
       </div>
 
       <div class="stat-item reveal reveal-delay-2">
-        <div class="stat-icon"><i class="fa-solid fa-buildings" style="color:#2563eb;"></i></div>
+        <div class="stat-icon"><i class="fa-solid fa-buildings" style="color:var(--clr-blue);"></i></div>
         <div class="stat-num">Enterprise<span> &amp; SMB</span></div>
         <div class="stat-label">Focused Customer Segments</div>
       </div>
 
       <div class="stat-item reveal reveal-delay-3">
-        <div class="stat-icon"><i class="fa-solid fa-globe" style="color:#2563eb;"></i></div>
+        <div class="stat-icon"><i class="fa-solid fa-globe" style="color:var(--clr-blue);"></i></div>
         <div class="stat-num">Global<span> Vendors</span></div>
         <div class="stat-label">Technology Partner Ecosystem</div>
       </div>
