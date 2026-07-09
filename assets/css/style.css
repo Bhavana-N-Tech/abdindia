@@ -455,6 +455,10 @@ p  { font-size: 0.95rem; color: var(--clr-muted); line-height: 1.7; } /* 15px-16
   from { opacity: 0; transform: translateX(30px); }
   to   { opacity: 1; transform: translateX(0); }
 }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
 .hero-dashboard {
   background: rgba(255,255,255,0.05);
@@ -1630,13 +1634,14 @@ body.js-enabled .reveal.visible {
   .nav-hamburger { display: flex; }
 
   .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
-  .hero-visual { max-width: 500px; margin: 0 auto; }
+  .hero-visual { max-width: 500px; width: 100%; margin: 0 auto; animation: fadeIn 0.9s ease 0.2s both !important; }
+  .hero-dashboard { max-width: 100%; width: 100%; box-sizing: border-box; }
   .page-hero-inner { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
   .page-hero h1 { margin-left: auto; margin-right: auto; }
   .page-hero p { margin-left: auto; margin-right: auto; }
   .page-hero-label { margin-left: auto; margin-right: auto; }
   .page-hero-actions { justify-content: center; }
-  .page-hero-visual { max-width: 500px; margin: 0 auto; }
+  .page-hero-visual { max-width: 500px; width: 100%; margin: 0 auto; animation: fadeIn 0.9s ease 0.2s both !important; }
 
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .cards-grid-3 { display: flex; }
