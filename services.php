@@ -30,7 +30,7 @@ include 'includes/header.php';
           </div>
           <div class="hero-float-cards">
             <div class="hero-float-card">
-              <div class="hfc-icon" style="background: rgba(37,99,235,0.15); color: var(--clr-blue);"><i class="fa-solid fa-file-certificate"></i></div>
+              <div class="hfc-icon" style="background: rgba(37,99,235,0.15); color: var(--clr-blue);"><i class="fa-solid fa-certificate"></i></div>
               <div class="hfc-title">Software Licensing</div>
               <div class="hfc-sub">Genuine · Competitive</div>
             </div>

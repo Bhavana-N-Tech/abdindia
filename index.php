@@ -68,7 +68,7 @@ include 'includes/header.php';
 
           <div class="hero-float-cards">
             <div class="hero-float-card">
-              <div class="hfc-icon" style="background: rgba(26,86,219,0.18); color: var(--clr-blue);"><i class="fa-solid fa-file-certificate"></i></div>
+              <div class="hfc-icon" style="background: rgba(26,86,219,0.18); color: var(--clr-blue);"><i class="fa-solid fa-certificate"></i></div>
               <div class="hfc-title">Software Licensing</div>
               <div class="hfc-sub">Genuine · Competitive</div>
             </div>
@@ -205,7 +205,7 @@ include 'includes/header.php';
     <div class="cards-grid-3">
       <?php
       $services = [
-        ['icon'=>'fa-solid fa-file-certificate','color'=>'icon-blue',   'title'=>'Software Licensing &amp; Procurement', 'desc'=>'Simplify software buying with genuine licensing, competitive pricing and vendor coordination for enterprises, SMBs and government customers.', 'badge'=>'Most Requested'],
+        ['icon'=>'fa-solid fa-certificate',     'color'=>'icon-blue',   'title'=>'Software Licensing &amp; Procurement', 'desc'=>'Simplify software buying with genuine licensing, competitive pricing and vendor coordination for enterprises, SMBs and government customers.', 'badge'=>'Most Requested'],
         ['icon'=>'fa-solid fa-lightbulb',        'color'=>'icon-indigo', 'title'=>'IT Consulting &amp; Advisory',          'desc'=>'Get expert guidance to identify the right technology products and platforms based on your business requirements and budget.'],
         ['icon'=>'fa-solid fa-shield-halved',    'color'=>'icon-rose',   'title'=>'Cybersecurity Solutions',               'desc'=>'Strengthen your security posture with endpoint protection, application security testing and compliance-focused tools.', 'badge'=>'Security Focused'],
         ['icon'=>'fa-solid fa-cloud',            'color'=>'icon-cyan',   'title'=>'Cloud &amp; Infrastructure Solutions',  'desc'=>'Modernize your IT infrastructure with cloud, virtualization, server, storage, backup and networking solutions.', 'badge'=>'Cloud Ready'],
