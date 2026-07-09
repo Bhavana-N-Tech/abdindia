@@ -1177,10 +1177,11 @@ p  { font-size: 0.95rem; color: var(--clr-muted); line-height: 1.7; } /* 15px-16
 .partner-logo img {
   width: 36px; height: 36px;
   object-fit: contain;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+  opacity: 0.65;
+  filter: grayscale(100%);
 }
-.partner-logo:hover img { transform: scale(1.15); opacity: 1; }
+.partner-logo:hover img { transform: scale(1.15); opacity: 1; filter: grayscale(0%); }
 .partner-logo-name {
   font-size: 0.7rem; font-weight: 600;
   color: var(--clr-muted);
@@ -1292,6 +1293,16 @@ p  { font-size: 0.95rem; color: var(--clr-muted); line-height: 1.7; } /* 15px-16
 .product-card:hover .product-logo-wrap {
   background: linear-gradient(135deg, rgba(26,86,219,0.08), rgba(26,86,219,0.03));
   border-color: rgba(26,86,219,0.2);
+}
+.product-logo-wrap img {
+  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+  opacity: 0.65;
+  filter: grayscale(100%);
+}
+.product-card:hover .product-logo-wrap img {
+  transform: scale(1.1);
+  opacity: 1;
+  filter: grayscale(0%);
 }
 .product-name {
   font-family: var(--font-display);
