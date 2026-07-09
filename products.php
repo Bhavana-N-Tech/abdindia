@@ -191,7 +191,7 @@ include 'includes/header.php';
       <div class="product-card reveal <?= $i >= 8 ? 'reveal-delay-'.min(($i % 4)+1, 5) : '' ?>"
            data-category="<?= $p['catkey'] ?>">
         <div class="product-logo-wrap">
-          <img src="<?= $p['logo'] ?>" alt="<?= $p['name'] ?>" width="32" height="32"
+          <img src="<?= $p['logo'] ?>" alt="<?= $p['name'] ?>" width="40" height="40"
                style="object-fit:contain;"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';"/>
           <span class="product-fallback-icon" style="display:none; font-size:1.4rem; font-weight:800; color:var(--clr-blue);"><?= substr($p['name'], 0, 1) ?></span>

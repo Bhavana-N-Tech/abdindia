@@ -353,9 +353,34 @@ include 'includes/header.php';
 
     <div class="partner-grid reveal">
       <?php
-      $partners = ['Microsoft','Adobe','Autodesk','JetBrains','KeyShot','Source Insight','Symantec','VMware','Citrix','Oracle','Atlassian','IDERA','Bitdefender','Veeam','ManageEngine','Kaspersky','Kofax','Foxit','Progress','Devart'];
+      $partners = [
+        ['name'=>'Microsoft',     'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=microsoft.com'],
+        ['name'=>'Adobe',         'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=adobe.com'],
+        ['name'=>'Autodesk',      'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=autodesk.com'],
+        ['name'=>'JetBrains',     'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=jetbrains.com'],
+        ['name'=>'KeyShot',       'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=keyshot.com'],
+        ['name'=>'Source Insight','logo'=>'https://www.google.com/s2/favicons?sz=128&domain=sourcedynamics.com'],
+        ['name'=>'Symantec',      'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=symantec.com'],
+        ['name'=>'VMware',        'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=vmware.com'],
+        ['name'=>'Citrix',        'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=citrix.com'],
+        ['name'=>'Oracle',        'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=oracle.com'],
+        ['name'=>'Atlassian',     'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=atlassian.com'],
+        ['name'=>'IDERA',         'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=idera.com'],
+        ['name'=>'Bitdefender',   'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=bitdefender.com'],
+        ['name'=>'Veeam',         'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=veeam.com'],
+        ['name'=>'ManageEngine',  'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=manageengine.com'],
+        ['name'=>'Kaspersky',     'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=kaspersky.com'],
+        ['name'=>'Kofax',         'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=kofax.com'],
+        ['name'=>'Foxit',         'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=foxit.com'],
+        ['name'=>'Progress',      'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=progress.com'],
+        ['name'=>'Devart',        'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=devart.com'],
+      ];
       foreach($partners as $p): ?>
-      <div class="partner-logo"><span><?= $p ?></span></div>
+      <div class="partner-logo" title="<?= $p['name'] ?>">
+        <img src="<?= $p['logo'] ?>" alt="<?= $p['name'] ?> logo" width="44" height="44"
+             onerror="this.style.display='none';" />
+        <span class="partner-logo-name"><?= $p['name'] ?></span>
+      </div>
       <?php endforeach; ?>
     </div>
 
