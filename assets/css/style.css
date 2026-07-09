@@ -1692,6 +1692,74 @@ body.js-enabled .reveal.visible {
   .partner-grid-lg { grid-template-columns: repeat(3, 1fr); }
   .product-grid  { grid-template-columns: repeat(2, 1fr); }
 
+  /* Horizontal scrollable category filters for Products and Solutions on mobile */
+  .filter-chips, .sol-filters {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    padding: 0.5rem 1.5rem !important;
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
+    margin-bottom: 2rem !important;
+    scrollbar-width: none !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .filter-chips::-webkit-scrollbar, .sol-filters::-webkit-scrollbar {
+    display: none !important;
+  }
+  .filter-chips .filter-chip, .sol-filters .filter-chip {
+    flex: 0 0 auto !important;
+  }
+
+  /* Ultra compact portrait mobile grids styling (max-width: 480px) */
+  @media (max-width: 480px) {
+    .partner-grid, .partner-grid-lg {
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 0.75rem !important;
+    }
+    .partner-logo {
+      padding: 0.9rem 0.5rem !important;
+      min-height: 80px !important;
+    }
+    .partner-logo img {
+      width: 36px !important;
+      height: 36px !important;
+    }
+    .partner-logo-name {
+      font-size: 0.65rem !important;
+    }
+    
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 0.8rem !important;
+    }
+    .product-card {
+      padding: 1.1rem 0.6rem !important;
+    }
+    .product-name {
+      font-size: 0.82rem !important;
+    }
+    .product-logo-wrap {
+      width: 52px !important;
+      height: 52px !important;
+      border-radius: 12px !important;
+      margin-bottom: 0.6rem !important;
+    }
+    .product-logo-wrap img {
+      width: 32px !important;
+      height: 32px !important;
+    }
+    .product-cat {
+      font-size: 0.68rem !important;
+      padding: 0.15rem 0.45rem !important;
+    }
+    .product-enquire {
+      padding: 0.45rem 0.8rem !important;
+      font-size: 0.76rem !important;
+    }
+  }
+
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .footer-bottom-links { justify-content: center; }
