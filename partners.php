@@ -84,37 +84,103 @@ include 'includes/header.php';
         'title' => 'Software Vendors',
         'icon'  => 'fa-solid fa-box-open',
         'color' => 'icon-blue',
-        'partners' => ['Microsoft','Adobe','Oracle','Autodesk','SAP','Citrix','VMware','Progress','Telerik','Zoho'],
+        'partners' => [
+          ['name'=>'Microsoft',  'logo'=>'https://cdn.simpleicons.org/microsoft/0078D4'],
+          ['name'=>'Adobe',      'logo'=>'https://cdn.simpleicons.org/adobe/FF0000'],
+          ['name'=>'Oracle',     'logo'=>'https://cdn.simpleicons.org/oracle/F80000'],
+          ['name'=>'SAP',        'logo'=>'https://cdn.simpleicons.org/sap/0FAAFF'],
+          ['name'=>'Autodesk',   'logo'=>'https://cdn.simpleicons.org/autodesk/000000'],
+          ['name'=>'VMware',     'logo'=>'https://cdn.simpleicons.org/vmware/607078'],
+          ['name'=>'Citrix',     'logo'=>'https://cdn.simpleicons.org/citrix/1383C4'],
+          ['name'=>'Zoho',       'logo'=>'https://cdn.simpleicons.org/zoho/C8202B'],
+          ['name'=>'Progress',   'logo'=>'https://cdn.simpleicons.org/progress/5CE500'],
+          ['name'=>'Atlassian',  'logo'=>'https://cdn.simpleicons.org/atlassian/0052CC'],
+        ],
       ],
       [
         'title' => 'Developer Tool Vendors',
         'icon'  => 'fa-solid fa-code',
         'color' => 'icon-emerald',
-        'partners' => ['JetBrains','SmartBear','Perforce','Klocwork','Telerik','Embarcadero','IDERA','Devart','Navicat','Postman'],
+        'partners' => [
+          ['name'=>'JetBrains',   'logo'=>'https://cdn.simpleicons.org/jetbrains/000000'],
+          ['name'=>'Postman',     'logo'=>'https://cdn.simpleicons.org/postman/FF6C37'],
+          ['name'=>'GitLab',      'logo'=>'https://cdn.simpleicons.org/gitlab/FC6D26'],
+          ['name'=>'GitHub',      'logo'=>'https://cdn.simpleicons.org/github/181717'],
+          ['name'=>'Gradle',      'logo'=>'https://cdn.simpleicons.org/gradle/02303A'],
+          ['name'=>'SmartBear',   'logo'=>'https://cdn.simpleicons.org/swagger/85EA2D'],
+          ['name'=>'Embarcadero', 'logo'=>'https://cdn.simpleicons.org/delphi/E62431'],
+          ['name'=>'Navicat',     'logo'=>'https://cdn.simpleicons.org/mysql/4479A1'],
+          ['name'=>'IDERA',       'logo'=>'https://cdn.simpleicons.org/postgresql/4169E1'],
+          ['name'=>'Perforce',    'logo'=>'https://cdn.simpleicons.org/perforce/404040'],
+        ],
       ],
       [
         'title' => 'Cybersecurity Vendors',
         'icon'  => 'fa-solid fa-shield-halved',
         'color' => 'icon-rose',
-        'partners' => ['Bitdefender','Kaspersky','Symantec','ESET','ManageEngine','Webroot','Sophos','Veracode','Qualys','Netsparker'],
+        'partners' => [
+          ['name'=>'Bitdefender',  'logo'=>'https://cdn.simpleicons.org/bitdefender/ED1C24'],
+          ['name'=>'Kaspersky',    'logo'=>'https://cdn.simpleicons.org/kaspersky/006D5C'],
+          ['name'=>'ESET',         'logo'=>'https://cdn.simpleicons.org/eset/1F4E97'],
+          ['name'=>'Sophos',       'logo'=>'https://cdn.simpleicons.org/sophos/0085CF'],
+          ['name'=>'Veracode',     'logo'=>'https://cdn.simpleicons.org/veracode/009BDE'],
+          ['name'=>'Qualys',       'logo'=>'https://cdn.simpleicons.org/qualys/ED2E26'],
+          ['name'=>'Symantec',     'logo'=>'https://cdn.simpleicons.org/broadcom/CC0000'],
+          ['name'=>'ManageEngine', 'logo'=>'https://cdn.simpleicons.org/zoho/C8202B'],
+          ['name'=>'Nessus',       'logo'=>'https://cdn.simpleicons.org/tenable/00B4C8'],
+          ['name'=>'CrowdStrike',  'logo'=>'https://cdn.simpleicons.org/crowdstrike/E00400'],
+        ],
       ],
       [
         'title' => 'Document Automation Vendors',
         'icon'  => 'fa-solid fa-file-lines',
         'color' => 'icon-violet',
-        'partners' => ['Kofax','Foxit','Adobe','iManage','Nuance','ABBYY','Accusoft','PDF Tools','DocuWare','Laserfiche'],
+        'partners' => [
+          ['name'=>'Adobe Acrobat', 'logo'=>'https://cdn.simpleicons.org/adobeacrobatreader/EC1C24'],
+          ['name'=>'Foxit',         'logo'=>'https://cdn.simpleicons.org/foxit/FF2116'],
+          ['name'=>'ABBYY',         'logo'=>'https://cdn.simpleicons.org/abbyy/E8000D'],
+          ['name'=>'DocuWare',      'logo'=>'https://cdn.simpleicons.org/docusign/FFBE00'],
+          ['name'=>'Kofax',         'logo'=>'https://cdn.simpleicons.org/kofax/2A52BE'],
+          ['name'=>'Laserfiche',    'logo'=>'https://cdn.simpleicons.org/files/000000'],
+          ['name'=>'iManage',       'logo'=>'https://cdn.simpleicons.org/files/5C6BC0'],
+          ['name'=>'Nuance',        'logo'=>'https://cdn.simpleicons.org/nuget/004880'],
+          ['name'=>'PDF-XChange',   'logo'=>'https://cdn.simpleicons.org/adobeacrobatreader/C84B31'],
+          ['name'=>'DocuSign',      'logo'=>'https://cdn.simpleicons.org/docusign/FFBE00'],
+        ],
       ],
       [
-        'title' => 'Remote Access &amp; Collaboration',
+        'title' => 'Remote Access & Collaboration',
         'icon'  => 'fa-solid fa-display',
         'color' => 'icon-cyan',
-        'partners' => ['Citrix','TeamViewer','AnyDesk','Splashtop','Parallels','LogMeIn','RealVNC','Ericom','NoMachine','Dameware'],
+        'partners' => [
+          ['name'=>'TeamViewer', 'logo'=>'https://cdn.simpleicons.org/teamviewer/0E8EE9'],
+          ['name'=>'AnyDesk',   'logo'=>'https://cdn.simpleicons.org/anydesk/EF443B'],
+          ['name'=>'Citrix',    'logo'=>'https://cdn.simpleicons.org/citrix/1383C4'],
+          ['name'=>'Zoom',      'logo'=>'https://cdn.simpleicons.org/zoom/2D8CFF'],
+          ['name'=>'Slack',     'logo'=>'https://cdn.simpleicons.org/slack/4A154B'],
+          ['name'=>'Microsoft Teams','logo'=>'https://cdn.simpleicons.org/microsoftteams/6264A7'],
+          ['name'=>'Splashtop', 'logo'=>'https://cdn.simpleicons.org/splashtop/EB4136'],
+          ['name'=>'Parallels', 'logo'=>'https://cdn.simpleicons.org/parallels/DC3C2E'],
+          ['name'=>'RealVNC',   'logo'=>'https://cdn.simpleicons.org/vnc/4376BE'],
+          ['name'=>'LogMeIn',   'logo'=>'https://cdn.simpleicons.org/goto/F36C23'],
+        ],
       ],
       [
-        'title' => 'Hardware &amp; Infrastructure Brands',
+        'title' => 'Hardware & Infrastructure Brands',
         'icon'  => 'fa-solid fa-microchip',
         'color' => 'icon-amber',
-        'partners' => ['HP','Dell','Lenovo','Intel','APC','Eaton','QNAP','Synology','Veeam','Acronis'],
+        'partners' => [
+          ['name'=>'HP',       'logo'=>'https://cdn.simpleicons.org/hp/0096D6'],
+          ['name'=>'Dell',     'logo'=>'https://cdn.simpleicons.org/dell/007DB8'],
+          ['name'=>'Lenovo',   'logo'=>'https://cdn.simpleicons.org/lenovo/E2231A'],
+          ['name'=>'Intel',    'logo'=>'https://cdn.simpleicons.org/intel/0071C5'],
+          ['name'=>'AMD',      'logo'=>'https://cdn.simpleicons.org/amd/ED1C24'],
+          ['name'=>'Veeam',    'logo'=>'https://cdn.simpleicons.org/veeam/00B336'],
+          ['name'=>'Acronis',  'logo'=>'https://cdn.simpleicons.org/acronis/EF4136'],
+          ['name'=>'QNAP',     'logo'=>'https://cdn.simpleicons.org/qnap/2D6FAD'],
+          ['name'=>'Synology', 'logo'=>'https://cdn.simpleicons.org/synology/B5B5B6'],
+          ['name'=>'APC',      'logo'=>'https://cdn.simpleicons.org/schneiderelectric/3DCD58'],
+        ],
       ],
     ];
 
@@ -130,8 +196,11 @@ include 'includes/header.php';
 
       <div class="partner-grid partner-grid-lg">
         <?php foreach ($cat['partners'] as $p): ?>
-        <div class="partner-logo">
-          <span><?= $p ?></span>
+        <div class="partner-logo" title="<?= $p['name'] ?>">
+          <img src="<?= $p['logo'] ?>" alt="<?= $p['name'] ?> logo" width="36" height="36"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+          <span class="partner-logo-name" style="display:none;"><?= $p['name'] ?></span>
+          <span class="partner-logo-name"><?= $p['name'] ?></span>
         </div>
         <?php endforeach; ?>
       </div>
@@ -177,7 +246,7 @@ include 'includes/header.php';
 <section class="cta-section" aria-label="Partners CTA">
   <div class="container">
     <div class="reveal">
-      <span class="section-label" style="background:rgba(37,99,235,0.15);border-color:rgba(37,99,235,0.3);color:#60a5fa;">Become a Customer</span>
+      <span class="section-label" style="background:rgba(26,86,219,0.12);border-color:rgba(26,86,219,0.25);color:#93c5fd;">Become a Customer</span>
       <h2>Looking for a specific vendor product or software license?<span class="red-dot">.</span></h2>
       <p>Contact AB&amp;D Software and let our procurement team source the right product for your organization.</p>
       <div class="cta-actions">

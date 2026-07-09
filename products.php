@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_title = 'Software & Hardware Products | AB&D Software India Pvt Ltd';
 $page_desc  = 'Browse software, developer tools, security, cloud, document automation and hardware products available through AB&D Software India.';
 include 'includes/header.php';
@@ -132,71 +132,75 @@ include 'includes/header.php';
       <?php
       $products = [
         // Developer Tools
-        ['emoji'=>'⚙️','name'=>'JetBrains IDEs',        'cat'=>'Developer Tools','catkey'=>'developer'],
-        ['emoji'=>'🔵','name'=>'Visual Studio',          'cat'=>'Developer Tools','catkey'=>'developer'],
-        ['emoji'=>'📝','name'=>'Sublime Text',           'cat'=>'Developer Tools','catkey'=>'developer'],
-        ['emoji'=>'🔧','name'=>'SmartBear Tools',        'cat'=>'Developer Tools','catkey'=>'developer'],
-        ['emoji'=>'🧪','name'=>'Telerik Testing',        'cat'=>'Developer Tools','catkey'=>'developer'],
-        ['emoji'=>'🔍','name'=>'Dynatrace',              'cat'=>'Developer Tools','catkey'=>'developer'],
-        ['emoji'=>'📊','name'=>'IDERA DevOps',           'cat'=>'Developer Tools','catkey'=>'developer'],
-        ['emoji'=>'⚡','name'=>'Postman API',             'cat'=>'Developer Tools','catkey'=>'developer'],
-        ['emoji'=>'🔍','name'=>'Source Insight',         'cat'=>'Developer Tools','catkey'=>'developer'],
-        ['emoji'=>'🔄','name'=>'Beyond Compare',         'cat'=>'Developer Tools','catkey'=>'developer'],
+        ['logo'=>'https://cdn.simpleicons.org/jetbrains/000000',         'name'=>'JetBrains IDEs',       'cat'=>'Developer Tools','catkey'=>'developer'],
+        ['logo'=>'https://cdn.simpleicons.org/visualstudio/5C2D91',      'name'=>'Visual Studio',         'cat'=>'Developer Tools','catkey'=>'developer'],
+        ['logo'=>'https://cdn.simpleicons.org/sublimetext/FF9800',       'name'=>'Sublime Text',          'cat'=>'Developer Tools','catkey'=>'developer'],
+        ['logo'=>'https://cdn.simpleicons.org/swagger/85EA2D',           'name'=>'SmartBear Tools',       'cat'=>'Developer Tools','catkey'=>'developer'],
+        ['logo'=>'https://cdn.simpleicons.org/postman/FF6C37',           'name'=>'Postman API',           'cat'=>'Developer Tools','catkey'=>'developer'],
+        ['logo'=>'https://cdn.simpleicons.org/dynatrace/1496FF',         'name'=>'Dynatrace',             'cat'=>'Developer Tools','catkey'=>'developer'],
+        ['logo'=>'https://cdn.simpleicons.org/postgresql/4169E1',        'name'=>'IDERA DevOps',          'cat'=>'Developer Tools','catkey'=>'developer'],
+        ['logo'=>'https://cdn.simpleicons.org/gitlab/FC6D26',            'name'=>'Source Insight',        'cat'=>'Developer Tools','catkey'=>'developer'],
+        ['logo'=>'https://cdn.simpleicons.org/github/181717',            'name'=>'Beyond Compare',        'cat'=>'Developer Tools','catkey'=>'developer'],
+        ['logo'=>'https://cdn.simpleicons.org/delphi/E62431',            'name'=>'Embarcadero RAD',       'cat'=>'Developer Tools','catkey'=>'developer'],
         // Security
-        ['emoji'=>'🛡️','name'=>'Bitdefender',           'cat'=>'Security Tools', 'catkey'=>'security'],
-        ['emoji'=>'🔐','name'=>'Kaspersky Business',     'cat'=>'Security Tools', 'catkey'=>'security'],
-        ['emoji'=>'🔒','name'=>'Symantec Endpoint',      'cat'=>'Security Tools', 'catkey'=>'security'],
-        ['emoji'=>'🕵️','name'=>'Veracode AppSec',        'cat'=>'Security Tools', 'catkey'=>'security'],
-        ['emoji'=>'🧱','name'=>'ManageEngine Security',  'cat'=>'Security Tools', 'catkey'=>'security'],
-        ['emoji'=>'🛡️','name'=>'ESET Endpoint',         'cat'=>'Security Tools', 'catkey'=>'security'],
+        ['logo'=>'https://cdn.simpleicons.org/bitdefender/ED1C24',       'name'=>'Bitdefender',           'cat'=>'Security Tools','catkey'=>'security'],
+        ['logo'=>'https://cdn.simpleicons.org/kaspersky/006D5C',         'name'=>'Kaspersky Business',    'cat'=>'Security Tools','catkey'=>'security'],
+        ['logo'=>'https://cdn.simpleicons.org/broadcom/CC0000',          'name'=>'Symantec Endpoint',     'cat'=>'Security Tools','catkey'=>'security'],
+        ['logo'=>'https://cdn.simpleicons.org/veracode/009BDE',          'name'=>'Veracode AppSec',       'cat'=>'Security Tools','catkey'=>'security'],
+        ['logo'=>'https://cdn.simpleicons.org/zoho/C8202B',              'name'=>'ManageEngine Security', 'cat'=>'Security Tools','catkey'=>'security'],
+        ['logo'=>'https://cdn.simpleicons.org/eset/1F4E97',              'name'=>'ESET Endpoint',         'cat'=>'Security Tools','catkey'=>'security'],
         // Document Automation
-        ['emoji'=>'📄','name'=>'Kofax Automation',       'cat'=>'Document Automation','catkey'=>'document'],
-        ['emoji'=>'📑','name'=>'Foxit PDF',              'cat'=>'Document Automation','catkey'=>'document'],
-        ['emoji'=>'📋','name'=>'Adobe Acrobat',          'cat'=>'Document Automation','catkey'=>'document'],
-        ['emoji'=>'🗂️','name'=>'iManage Docs',          'cat'=>'Document Automation','catkey'=>'document'],
-        ['emoji'=>'🖨️','name'=>'PDF Creator Plus',      'cat'=>'Document Automation','catkey'=>'document'],
-        ['emoji'=>'📄','name'=>'PDF-XChange Editor',     'cat'=>'Document Automation','catkey'=>'document'],
+        ['logo'=>'https://cdn.simpleicons.org/kofax/2A52BE',             'name'=>'Kofax Automation',      'cat'=>'Document Automation','catkey'=>'document'],
+        ['logo'=>'https://cdn.simpleicons.org/foxit/FF2116',             'name'=>'Foxit PDF',             'cat'=>'Document Automation','catkey'=>'document'],
+        ['logo'=>'https://cdn.simpleicons.org/adobeacrobatreader/EC1C24','name'=>'Adobe Acrobat',         'cat'=>'Document Automation','catkey'=>'document'],
+        ['logo'=>'https://cdn.simpleicons.org/docusign/FFBE00',          'name'=>'iManage Docs',          'cat'=>'Document Automation','catkey'=>'document'],
+        ['logo'=>'https://cdn.simpleicons.org/abbyy/E8000D',             'name'=>'ABBYY FlexiCapture',    'cat'=>'Document Automation','catkey'=>'document'],
+        ['logo'=>'https://cdn.simpleicons.org/adobeacrobatreader/C84B31','name'=>'PDF-XChange Editor',    'cat'=>'Document Automation','catkey'=>'document'],
         // Remote Access
-        ['emoji'=>'🖥️','name'=>'Citrix Virtual Apps',  'cat'=>'Remote Access',  'catkey'=>'remote'],
-        ['emoji'=>'🌐','name'=>'TeamViewer Tensor',      'cat'=>'Remote Access',  'catkey'=>'remote'],
-        ['emoji'=>'🔗','name'=>'AnyDesk Business',       'cat'=>'Remote Access',  'catkey'=>'remote'],
-        ['emoji'=>'🛡️','name'=>'Splashtop Enterprise', 'cat'=>'Remote Access',  'catkey'=>'remote'],
+        ['logo'=>'https://cdn.simpleicons.org/citrix/1383C4',            'name'=>'Citrix Virtual Apps',   'cat'=>'Remote Access','catkey'=>'remote'],
+        ['logo'=>'https://cdn.simpleicons.org/teamviewer/0E8EE9',        'name'=>'TeamViewer Tensor',     'cat'=>'Remote Access','catkey'=>'remote'],
+        ['logo'=>'https://cdn.simpleicons.org/anydesk/EF443B',           'name'=>'AnyDesk Business',      'cat'=>'Remote Access','catkey'=>'remote'],
+        ['logo'=>'https://cdn.simpleicons.org/splashtop/EB4136',         'name'=>'Splashtop Enterprise',  'cat'=>'Remote Access','catkey'=>'remote'],
         // Database Tools
-        ['emoji'=>'🗄️','name'=>'Devart DB Tools',       'cat'=>'Database Tools', 'catkey'=>'database'],
-        ['emoji'=>'🔵','name'=>'SQL Server Tools',       'cat'=>'Database Tools', 'catkey'=>'database'],
-        ['emoji'=>'🟠','name'=>'Oracle DB Tools',        'cat'=>'Database Tools', 'catkey'=>'database'],
-        ['emoji'=>'📊','name'=>'Navicat Premium',        'cat'=>'Database Tools', 'catkey'=>'database'],
-        // Design & Media
-        ['emoji'=>'🎨','name'=>'Adobe Creative Cloud',  'cat'=>'Design & Media', 'catkey'=>'design'],
-        ['emoji'=>'✏️','name'=>'CorelDRAW Graphics',    'cat'=>'Design & Media', 'catkey'=>'design'],
-        ['emoji'=>'🖼️','name'=>'Affinity Suite',        'cat'=>'Design & Media', 'catkey'=>'design'],
-        ['emoji'=>'🎨','name'=>'KeyShot Studio AI',      'cat'=>'Design & Media', 'catkey'=>'design'],
+        ['logo'=>'https://cdn.simpleicons.org/mysql/4479A1',             'name'=>'Navicat Premium',       'cat'=>'Database Tools','catkey'=>'database'],
+        ['logo'=>'https://cdn.simpleicons.org/microsoftsqlserver/CC2927','name'=>'SQL Server Tools',      'cat'=>'Database Tools','catkey'=>'database'],
+        ['logo'=>'https://cdn.simpleicons.org/oracle/F80000',            'name'=>'Oracle DB Tools',       'cat'=>'Database Tools','catkey'=>'database'],
+        ['logo'=>'https://cdn.simpleicons.org/postgresql/4169E1',        'name'=>'PostgreSQL Tools',      'cat'=>'Database Tools','catkey'=>'database'],
+        // Design and Media
+        ['logo'=>'https://cdn.simpleicons.org/adobe/FF0000',             'name'=>'Adobe Creative Cloud',  'cat'=>'Design & Media','catkey'=>'design'],
+        ['logo'=>'https://cdn.simpleicons.org/coreldraw/59B143',         'name'=>'CorelDRAW Graphics',    'cat'=>'Design & Media','catkey'=>'design'],
+        ['logo'=>'https://cdn.simpleicons.org/affinity/1B72BE',          'name'=>'Affinity Suite',        'cat'=>'Design & Media','catkey'=>'design'],
+        ['logo'=>'https://cdn.simpleicons.org/blender/E87D0D',           'name'=>'KeyShot Studio AI',     'cat'=>'Design & Media','catkey'=>'design'],
         // Productivity
-        ['emoji'=>'📧','name'=>'Microsoft 365',          'cat'=>'Productivity',   'catkey'=>'productivity'],
-        ['emoji'=>'📱','name'=>'Slack Business',         'cat'=>'Productivity',   'catkey'=>'productivity'],
-        ['emoji'=>'📋','name'=>'Atlassian Suite',        'cat'=>'Productivity',   'catkey'=>'productivity'],
-        ['emoji'=>'✅','name'=>'Zoho Workplace',         'cat'=>'Productivity',   'catkey'=>'productivity'],
+        ['logo'=>'https://cdn.simpleicons.org/microsoftoffice/D83B01',   'name'=>'Microsoft 365',         'cat'=>'Productivity','catkey'=>'productivity'],
+        ['logo'=>'https://cdn.simpleicons.org/slack/4A154B',             'name'=>'Slack Business',        'cat'=>'Productivity','catkey'=>'productivity'],
+        ['logo'=>'https://cdn.simpleicons.org/atlassian/0052CC',         'name'=>'Atlassian Suite',       'cat'=>'Productivity','catkey'=>'productivity'],
+        ['logo'=>'https://cdn.simpleicons.org/zoho/C8202B',              'name'=>'Zoho Workplace',        'cat'=>'Productivity','catkey'=>'productivity'],
         // Infrastructure
-        ['emoji'=>'🖥️','name'=>'VMware vSphere',        'cat'=>'Infrastructure', 'catkey'=>'infrastructure'],
-        ['emoji'=>'💾','name'=>'Veeam Backup',           'cat'=>'Infrastructure', 'catkey'=>'infrastructure'],
-        ['emoji'=>'🔄','name'=>'Acronis Backup',         'cat'=>'Infrastructure', 'catkey'=>'infrastructure'],
-        ['emoji'=>'⚡','name'=>'NAKIVO Backup',          'cat'=>'Infrastructure', 'catkey'=>'infrastructure'],
+        ['logo'=>'https://cdn.simpleicons.org/vmware/607078',            'name'=>'VMware vSphere',        'cat'=>'Infrastructure','catkey'=>'infrastructure'],
+        ['logo'=>'https://cdn.simpleicons.org/veeam/00B336',             'name'=>'Veeam Backup',          'cat'=>'Infrastructure','catkey'=>'infrastructure'],
+        ['logo'=>'https://cdn.simpleicons.org/acronis/EF4136',           'name'=>'Acronis Backup',        'cat'=>'Infrastructure','catkey'=>'infrastructure'],
+        ['logo'=>'https://cdn.simpleicons.org/cloudflare/F38020',        'name'=>'NAKIVO Backup',         'cat'=>'Infrastructure','catkey'=>'infrastructure'],
         // Hardware
-        ['emoji'=>'🖨️','name'=>'HP Printers',          'cat'=>'Hardware',       'catkey'=>'hardware'],
-        ['emoji'=>'💻','name'=>'Lenovo Workstations',    'cat'=>'Hardware',       'catkey'=>'hardware'],
-        ['emoji'=>'🖥️','name'=>'Dell Business PCs',     'cat'=>'Hardware',       'catkey'=>'hardware'],
-        ['emoji'=>'🔌','name'=>'UPS & Power Systems',    'cat'=>'Hardware',       'catkey'=>'hardware'],
+        ['logo'=>'https://cdn.simpleicons.org/hp/0096D6',                'name'=>'HP Printers',           'cat'=>'Hardware','catkey'=>'hardware'],
+        ['logo'=>'https://cdn.simpleicons.org/lenovo/E2231A',            'name'=>'Lenovo Workstations',   'cat'=>'Hardware','catkey'=>'hardware'],
+        ['logo'=>'https://cdn.simpleicons.org/dell/007DB8',              'name'=>'Dell Business PCs',     'cat'=>'Hardware','catkey'=>'hardware'],
+        ['logo'=>'https://cdn.simpleicons.org/schneiderelectric/3DCD58', 'name'=>'UPS & Power Systems',   'cat'=>'Hardware','catkey'=>'hardware'],
       ];
       foreach ($products as $i => $p): ?>
       <div class="product-card reveal <?= $i >= 8 ? 'reveal-delay-'.min(($i % 4)+1, 5) : '' ?>"
            data-category="<?= $p['catkey'] ?>">
-        <div class="product-logo-wrap"><?= $p['emoji'] ?></div>
+        <div class="product-logo-wrap">
+          <img src="<?= $p['logo'] ?>" alt="<?= $p['name'] ?>" width="38" height="38"
+               style="object-fit:contain;"
+               onerror="this.style.opacity='0';"/>
+        </div>
         <div class="product-name"><?= $p['name'] ?></div>
         <div class="product-cat"><?= $p['cat'] ?></div>
         <button class="product-enquire" onclick="window.location='contact.php?interest=<?= urlencode($p['cat']) ?>&message=I%20am%20interested%20in%20<?= urlencode($p['name']) ?>.'">Enquire Now</button>
       </div>
       <?php endforeach; ?>
-    </div><!-- /filterContainer -->
+    </div><!-- /filterContainer -->    </div><!-- /filterContainer -->
 
   </div>
 </section>
@@ -238,7 +242,7 @@ include 'includes/header.php';
 <section class="cta-section" aria-label="Products CTA">
   <div class="container">
     <div class="reveal">
-      <span class="section-label" style="background:rgba(194,30,37,0.12);border-color:rgba(194,30,37,0.25);color:var(--clr-blue-light);">Request a Quote</span>
+      <span class="section-label" style="background:rgba(26,86,219,0.12);border-color:rgba(26,86,219,0.25);color:#93c5fd;">Request a Quote</span>
       <h2>Can't find a specific product or software?<span class="red-dot">.</span></h2>
       <p>Contact our procurement team — we source from a wide vendor ecosystem and can help with custom software licensing requirements.</p>
       <div class="cta-actions">

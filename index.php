@@ -68,7 +68,7 @@ include 'includes/header.php';
 
           <div class="hero-float-cards">
             <div class="hero-float-card">
-              <div class="hfc-icon" style="background: rgba(194,30,37,0.15); color: var(--clr-blue);"><i class="fa-solid fa-file-certificate"></i></div>
+              <div class="hfc-icon" style="background: rgba(26,86,219,0.18); color: var(--clr-blue);"><i class="fa-solid fa-file-certificate"></i></div>
               <div class="hfc-title">Software Licensing</div>
               <div class="hfc-sub">Genuine · Competitive</div>
             </div>

@@ -30,7 +30,7 @@ include 'includes/header.php';
           </div>
           <div class="hero-float-cards">
             <div class="hero-float-card">
-              <div class="hfc-icon" style="background: rgba(194,30,37,0.15); color: var(--clr-blue);"><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="hfc-icon" style="background: rgba(26,86,219,0.18); color: var(--clr-blue);"><i class="fa-solid fa-cart-shopping"></i></div>
               <div class="hfc-title">Digital Procurement</div>
               <div class="hfc-sub">Streamlined Sourcing</div>
             </div>
@@ -192,7 +192,7 @@ include 'includes/header.php';
 <section class="cta-section" aria-label="Solutions CTA">
   <div class="container">
     <div class="reveal">
-      <span class="section-label" style="background:rgba(194,30,37,0.12);border-color:rgba(194,30,37,0.25);color:var(--clr-blue-light);">Expert Guidance</span>
+      <span class="section-label" style="background:rgba(26,86,219,0.12);border-color:rgba(26,86,219,0.25);color:#93c5fd;">Expert Guidance</span>
       <h2>Not sure which solution fits your requirement?<span class="red-dot">.</span></h2>
       <p>Our technology advisors will map your business needs to the right solution and procurement path.</p>
       <div class="cta-actions">
