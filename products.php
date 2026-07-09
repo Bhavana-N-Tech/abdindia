@@ -137,7 +137,6 @@ include 'includes/header.php';
         ['logo'=>'https://www.google.com/s2/favicons?sz=128&domain=sublimetext.com',       'name'=>'Sublime Text',          'cat'=>'Developer Tools','catkey'=>'developer'],
         ['logo'=>'https://www.google.com/s2/favicons?sz=128&domain=smartbear.com',         'name'=>'SmartBear Tools',       'cat'=>'Developer Tools','catkey'=>'developer'],
         ['logo'=>'https://www.google.com/s2/favicons?sz=128&domain=postman.com',           'name'=>'Postman API',           'cat'=>'Developer Tools','catkey'=>'developer'],
-        ['logo'=>'https://www.google.com/s2/favicons?sz=128&domain=dynatrace.com',         'name'=>'Sublime Text',          'cat'=>'Developer Tools','catkey'=>'developer'], // wait, name is Dynatrace in target, let's keep name correct
         ['logo'=>'https://www.google.com/s2/favicons?sz=128&domain=dynatrace.com',         'name'=>'Dynatrace',             'cat'=>'Developer Tools','catkey'=>'developer'],
         ['logo'=>'https://www.google.com/s2/favicons?sz=128&domain=idera.com',             'name'=>'IDERA DevOps',          'cat'=>'Developer Tools','catkey'=>'developer'],
         ['logo'=>'https://www.google.com/s2/favicons?sz=128&domain=sourcedynamics.com',    'name'=>'Source Insight',        'cat'=>'Developer Tools','catkey'=>'developer'],
