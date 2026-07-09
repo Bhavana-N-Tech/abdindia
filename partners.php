@@ -202,6 +202,12 @@ include 'includes/header.php';
         </div>
         <?php endforeach; ?>
       </div>
+
+      <?php if (count($cat['partners']) > 6): ?>
+      <div class="partner-toggle-wrap" style="display:none; text-align:center; margin-top:1.2rem;">
+        <button class="btn-partner-toggle btn btn-outline-dark btn-sm" style="font-size:0.75rem; padding:0.4rem 1.2rem; min-height:auto; font-weight:600; border-radius:30px;">Show All (+<?= count($cat['partners']) - 6 ?>)</button>
+      </div>
+      <?php endif; ?>
     </div>
 
     <?php endforeach; ?>

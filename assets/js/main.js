@@ -107,6 +107,61 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ── 7. Product / Solution filter chips ── */
+  const productGrid = document.getElementById('filterContainer');
+  let cards = [];
+  let visibleCount = 12;
+  const itemsToShow = 12;
+  let loadMoreWrap = null;
+  let btnLoadMore = null;
+
+  if (productGrid) {
+    cards = Array.from(productGrid.querySelectorAll('.product-card'));
+    
+    // Create Load More Button wrapper
+    loadMoreWrap = document.createElement('div');
+    loadMoreWrap.className = 'section-footer';
+    loadMoreWrap.style.marginTop = '2.5rem';
+    loadMoreWrap.innerHTML = `<button id="btnLoadMore" class="btn btn-primary" style="margin:0 auto;display:flex;">Show More Products <i class="fa-solid fa-arrow-down" style="margin-left:0.5rem;"></i></button>`;
+    productGrid.parentNode.insertBefore(loadMoreWrap, productGrid.nextSibling);
+    btnLoadMore = document.getElementById('btnLoadMore');
+
+    btnLoadMore.addEventListener('click', () => {
+      visibleCount += itemsToShow;
+      updateVisibility();
+    });
+  }
+
+  function updateVisibility() {
+    if (!productGrid) return;
+    const activeFilter = document.querySelector('.filter-chips .filter-chip.active')?.dataset.filter || 'all';
+    const searchQuery = (document.getElementById('productSearch')?.value || '').toLowerCase().trim();
+
+    let matchCount = 0;
+    cards.forEach(card => {
+      const matchesFilter = activeFilter === 'all' || card.dataset.category === activeFilter;
+      const matchesSearch = !searchQuery || 
+        (card.querySelector('.product-name')?.textContent || '').toLowerCase().includes(searchQuery) ||
+        (card.querySelector('.product-cat')?.textContent || '').toLowerCase().includes(searchQuery);
+
+      if (matchesFilter && matchesSearch) {
+        if (matchCount < visibleCount) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+        matchCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (matchCount <= visibleCount) {
+      loadMoreWrap.style.display = 'none';
+    } else {
+      loadMoreWrap.style.display = 'block';
+    }
+  }
+
   document.querySelectorAll('.filter-chip').forEach(chip => {
     chip.addEventListener('click', () => {
       const group = chip.closest('.filter-chips, .sol-filters');
@@ -118,11 +173,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const container = document.getElementById('filterContainer') || document.getElementById('solContainer');
       if (!container) return;
 
-      container.querySelectorAll('[data-category]').forEach(card => {
-        const matches = filter === 'all' || card.dataset.category === filter;
-        card.style.display = matches ? '' : 'none';
-        card.style.animation = matches ? 'fadeInCard 0.3s ease' : '';
-      });
+      if (container.id === 'filterContainer') {
+        visibleCount = itemsToShow;
+        updateVisibility();
+      } else {
+        // Solutions page filter
+        container.querySelectorAll('[data-category]').forEach(card => {
+          const matches = filter === 'all' || card.dataset.category === filter;
+          card.style.display = matches ? '' : 'none';
+          card.style.animation = matches ? 'fadeInCard 0.3s ease' : '';
+        });
+      }
     });
   });
 
@@ -130,14 +191,42 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('productSearch');
   if (searchInput) {
     searchInput.addEventListener('input', () => {
-      const q = searchInput.value.toLowerCase().trim();
-      document.querySelectorAll('.product-card').forEach(card => {
-        const name = (card.querySelector('.product-name')?.textContent || '').toLowerCase();
-        const cat  = (card.querySelector('.product-cat')?.textContent  || '').toLowerCase();
-        card.style.display = (name.includes(q) || cat.includes(q)) ? '' : 'none';
-      });
+      if (productGrid) {
+        visibleCount = itemsToShow;
+        updateVisibility();
+      } else {
+        const q = searchInput.value.toLowerCase().trim();
+        document.querySelectorAll('.product-card').forEach(card => {
+          const name = (card.querySelector('.product-name')?.textContent || '').toLowerCase();
+          const cat  = (card.querySelector('.product-cat')?.textContent  || '').toLowerCase();
+          card.style.display = (name.includes(q) || cat.includes(q)) ? '' : 'none';
+        });
+      }
     });
   }
+
+  // Initialize products visibility
+  if (productGrid) {
+    updateVisibility();
+  }
+
+  /* ── 8b. Partner category mobile expander ── */
+  document.querySelectorAll('.btn-partner-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.closest('.partner-category');
+      if (!cat) return;
+      cat.classList.toggle('expanded');
+      const isExpanded = cat.classList.contains('expanded');
+      const totalCount = cat.querySelectorAll('.partner-logo').length;
+      const hiddenCount = totalCount - 6;
+      btn.textContent = isExpanded ? 'Show Less' : `Show All (+${hiddenCount})`;
+      
+      // Optional smooth scroll to category top when collapsing
+      if (!isExpanded) {
+        cat.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
 
   /* ── 9. Contact form AJAX handler ── */
   const contactForm = document.getElementById('contactForm');

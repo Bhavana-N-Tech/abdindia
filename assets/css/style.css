@@ -1691,6 +1691,13 @@ body.js-enabled .reveal.visible {
   .partner-grid  { grid-template-columns: repeat(3, 1fr); }
   .partner-grid-lg { grid-template-columns: repeat(3, 1fr); }
   .product-grid  { grid-template-columns: repeat(2, 1fr); }
+  /* Partners grid limit on mobile to prevent endless scrolling */
+  .partner-category:not(.expanded) .partner-grid .partner-logo:nth-child(n+7) {
+    display: none !important;
+  }
+  .partner-toggle-wrap {
+    display: block !important;
+  }
 
   /* Horizontal scrollable category filters for Products and Solutions on mobile */
   .filter-chips, .sol-filters {
