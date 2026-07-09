@@ -1177,11 +1177,10 @@ p  { font-size: 0.95rem; color: var(--clr-muted); line-height: 1.7; } /* 15px-16
 .partner-logo img {
   width: 44px; height: 44px;
   object-fit: contain;
-  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
-  opacity: 0.8;
-  filter: grayscale(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.95;
 }
-.partner-logo:hover img { transform: scale(1.1); opacity: 1; filter: grayscale(0%); }
+.partner-logo:hover img { transform: scale(1.1); opacity: 1; }
 .partner-logo-name {
   font-size: 0.7rem; font-weight: 600;
   color: var(--clr-muted);
@@ -1297,14 +1296,12 @@ p  { font-size: 0.95rem; color: var(--clr-muted); line-height: 1.7; } /* 15px-16
 .product-logo-wrap img {
   width: 40px; height: 40px;
   object-fit: contain;
-  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
-  opacity: 0.8;
-  filter: grayscale(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.95;
 }
 .product-card:hover .product-logo-wrap img {
   transform: scale(1.1);
   opacity: 1;
-  filter: grayscale(0%);
 }
 .product-name {
   font-family: var(--font-display);
