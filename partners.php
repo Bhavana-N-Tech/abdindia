@@ -91,6 +91,7 @@ include 'includes/header.php';
           ['name'=>'SAP',        'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=sap.com'],
           ['name'=>'Autodesk',   'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=autodesk.com'],
           ['name'=>'VMware',     'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=vmware.com'],
+          ['name'=>'Citrix',     'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=citrix.com'],
           ['name'=>'Zoho',       'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=zoho.com'],
           ['name'=>'Atlassian',  'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=atlassian.com'],
           ['name'=>'Progress',   'logo'=>'https://www.google.com/s2/favicons?sz=128&domain=progress.com'],

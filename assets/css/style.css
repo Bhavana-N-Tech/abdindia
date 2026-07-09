@@ -1688,8 +1688,19 @@ body.js-enabled .reveal.visible {
   }
   .cards-grid-4  { grid-template-columns: 1fr; }
   .industry-grid { grid-template-columns: repeat(2, 1fr); }
-  .partner-grid  { grid-template-columns: repeat(3, 1fr); }
-  .partner-grid-lg { grid-template-columns: repeat(3, 1fr); }
+  .partner-grid  { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
+  .partner-grid-lg { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
+  .partner-logo {
+    padding: 0.9rem 0.5rem;
+    min-height: 80px;
+  }
+  .partner-logo img {
+    width: 38px;
+    height: 38px;
+  }
+  .partner-logo-name {
+    font-size: 0.68rem;
+  }
   .product-grid  { grid-template-columns: repeat(2, 1fr); }
   /* Partners grid limit on mobile to prevent endless scrolling */
   .partner-category:not(.expanded) .partner-grid .partner-logo:nth-child(n+7) {
@@ -1721,21 +1732,6 @@ body.js-enabled .reveal.visible {
 
   /* Ultra compact portrait mobile grids styling (max-width: 480px) */
   @media (max-width: 480px) {
-    .partner-grid, .partner-grid-lg {
-      grid-template-columns: repeat(2, 1fr) !important;
-      gap: 0.75rem !important;
-    }
-    .partner-logo {
-      padding: 0.9rem 0.5rem !important;
-      min-height: 80px !important;
-    }
-    .partner-logo img {
-      width: 36px !important;
-      height: 36px !important;
-    }
-    .partner-logo-name {
-      font-size: 0.65rem !important;
-    }
     
     .product-grid {
       grid-template-columns: repeat(2, 1fr) !important;
